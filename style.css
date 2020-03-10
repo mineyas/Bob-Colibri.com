@@ -31,3 +31,35 @@ nav {
  .navGallery2 {
      display: none; }
 
+ @media only screen and (min-width:900px) {
+    
+    header {
+        display :flex;
+        background-color: grey;
+        align-items: center;
+    }
+    
+    nav {
+        position: initial ;
+        width: 100%;
+        background-color: grey;
+        color: white;
+        text-align: center;
+    }
+
+    nav ul {
+        justify-content: flex-end;    
+    }
+
+    nav li {
+        margin : 5px; 
+    }
+    
+    .navGallery2 {
+        display: block ;
+    }
+
+    nav li img {
+        display: none;
+    }
+ }
