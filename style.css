@@ -9,7 +9,7 @@ nav {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: grey;
+    background-color: lightgrey;
     color: white;
  }
 
@@ -23,9 +23,8 @@ nav {
  nav li img {
      display: block;
      margin: auto;
-     width:25px;
-     height: 25px;
-     background-color: red;
+     width:30px;
+     height: 30px;
  }
 
  .navGallery2 {
