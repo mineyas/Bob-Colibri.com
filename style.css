@@ -1,0 +1,50 @@
+/* CSS du Footer Projet-1*/
+
+footer
+    
+{
+    background-color: black;
+     color: white;
+     font-family: "Montserrat", "Open Sans" 
+
+    
+}
+
+.main-footer
+
+{
+    display: flex;
+    justify-content: space-around;
+    
+    
+}
+
+li 
+{
+    list-style: none;
+   
+    
+}
+
+.bottom-footer
+
+{
+display: flex;
+align-items: center;
+justify-content: space-around;
+padding-bottom: 10px;
+
+
+}
+
+.icons
+{
+    
+
+    
+}
+   
+ 
+
+
+
