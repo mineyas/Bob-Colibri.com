@@ -1,4 +1,6 @@
 
+/* CSS formular and map of Profile's page*/
+
 label {
     display : none;
 }
@@ -61,7 +63,7 @@ iframe {
 }
 /* main {
 } */
-    h1 {
+h1 {
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     font-size:35px;
@@ -69,11 +71,12 @@ iframe {
 
 h2 {
     font-family: 'Open Sans', sans-serif;
-    font-size:30px;
+    font-size: 30px;
 }
 
-p {
+.informations {
     font-family: 'Montserrat', sans-serif;
+    margin-top: 10px;
 }
 /* CSS du Footer Projet-1*/
 
