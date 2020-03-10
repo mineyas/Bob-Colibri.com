@@ -1,11 +1,3 @@
-h2 {
-    font-family: 'Open Sans', sans-serif;
-    font-size:30px;
- }
- 
- p {
-    font-family: 'Montserrat', sans-serif;
-}
 
 label {
     display : none;
@@ -67,3 +59,138 @@ iframe {
     border-radius: .25rem;
     cursor: pointer;
 }
+/* main {
+} */
+    h1 {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size:35px;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size:30px;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+/* CSS du Footer Projet-1*/
+
+footer
+    
+{
+    background-color: black;
+     color: white;
+     font-family: "Montserrat", "Open Sans" 
+
+    
+}
+
+.main-footer
+
+{
+    display: flex;
+    justify-content: space-around;
+    
+    
+}
+
+li 
+{
+    list-style: none;
+   
+    
+}
+
+.bottom-footer
+
+{
+display: flex;
+align-items: center;
+justify-content: space-around;
+padding-bottom: 10px;
+
+
+}
+
+/* .icons
+{
+    
+
+    
+} */
+   
+ 
+
+
+
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+} 
+
+nav {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: lightgrey;
+    color: white;
+ }
+
+ nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly; 
+    padding : 4px 0px;  
+ }
+
+ nav a {
+    text-decoration: none;
+    color: black;
+ }
+
+ nav li img {
+     display: block;
+     margin: auto;
+     width:30px;
+     height: 30px;
+ }
+
+ .navGallery2 {
+     display: none; }
+
+ @media only screen and (min-width:900px) {
+    
+    header {
+        display :flex;
+        background-color: grey;
+        align-items: center;
+    }
+    
+    nav {
+        position: initial ;
+        width: 100%;
+        background-color: grey;
+        color: white;
+        text-align: center;
+    }
+
+    nav ul {
+        justify-content: flex-end;    
+    }
+
+    nav li {
+        margin : 5px; 
+    }
+    
+    .navGallery2 {
+        display: block ;
+    }
+
+    nav li img {
+        display: none;
+    }
+ }
