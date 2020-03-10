@@ -1,0 +1,42 @@
+h1{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size:35px;
+}
+
+h2{
+    font-family: 'Open Sans', sans-serif;
+    font-size:30px;
+    text-align: justify;
+     
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;;
+    size:18;
+    text-align: justify;  
+}
+
+section{
+    direction: column;
+    margin: 2%;
+    margin-bottom: 4%;
+}
+
+.about img{
+    margin-right: 2%;
+    float: left; 
+}
+
+.experience img{
+   
+    margin-left: 2%;
+    float: right;
+}
+.tools img{
+    margin-right: 2%;
+    float: left;
+}
+
+
+
