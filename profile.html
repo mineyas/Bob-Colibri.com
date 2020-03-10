@@ -1,49 +1,87 @@
 <!DOCTYPE html>
 <html lang="En">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <meta name="author" content="BobColibri">
-    <meta name="description" content="Blog of photographer.">
-    <title>Blog of a photographer</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel=“icon” type=“image/png” href=“logo.png” />
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="BobColibri">
+	<meta name="description" content="Blog of photographer.">
+	<title>Blog of a photographer</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<link rel=“icon” type=“image/png” href=“logo.png” />
 </head>
+
 <body>
- <header>
- 	<div>
- 		<a href="#"><img src="" alt="Logo"></a>
- 	</div>
- 	<nav>
- 		<ul>
- 			<li><a href="#">Home</a></li>
- 			<li><a href="#">Who am I</a></li>
- 			<li><a href="#">Gallery 1</a></li>
- 			<li><a href="#">Gallery 2</a></li>
- 			<li><a href="#">my services</a></li>
- 			
- 		</ul>
- 	</nav>
- </header>
- <section>
- 	<div class="carousel">
- 		
- 	</div>
- 	<p>
- 		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
- 	</p>
- 	<button><a href="#">see the gallery</a></button>
- </section>
- <!-- who am I -->
- <section>
- 	<h2>Who am I</h2>
- 	<div>
- 		<p>
- 			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
- 		</p>
- 	</div>
- 	<h3>My equipement</h3>
- </section>
+	<header>
+		<div>
+			<a href="#"><img src="" alt="Logo"></a>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Who am I</a></li>
+				<li><a href="#">Gallery 1</a></li>
+				<li><a href="#">Gallery 2</a></li>
+				<li><a href="#">my services</a></li>
+
+			</ul>
+		</nav>
+	</header>
+	<section>
+		<div class="carousel">
+
+		</div>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+			dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+			ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+			nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+			anim id est laborum.
+		</p>
+		<button><a href="#">see the gallery</a></button>
+	</section>
+	<!-- who am I -->
+	<section>
+		<h2>Who am I</h2>
+		<div>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+				dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+				ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+				fugiat nulla pariatur.
+			</p>
+		</div>
+		<h3>My equipement</h3>
+	</section>
+	<div id="adress">
+		<h2>Find me</h2>
+		<div id="map">
+			<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2628.3906764210424!2d2.370049514957104!3d48.79352191322713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e673e7d96010f9%3A0x2358330821b863eb!2s67%20Rue%20du%20Lion%20d&#39;Or%2C%2094400%20Vitry-sur-Seine!5e0!3m2!1sfr!2sfr!4v1583840822859!5m2!1sfr!2sfr"  ></iframe>
+		</div>
+		<div class="informations">
+			<p>
+				Adress : 67 Rue du Lion d'Or, 94400 Vitry-sur-Seine<br>
+				My phone number : 06 XX XX XX XX <br>
+				My em@il : <a href="mailto:bob.colibri@gmail.com">bob.colibri@gmail.com</a>
+		
+			</p>
+		</div>
+	</div>
+	<div id="letMeMessage">
+		<h2>Let me some message</h2>
+			<form action="sendMessage">
+				<label for="name">Name</label>
+				<input class="formular" placeholder="Name" id="name" type="text" name="name" value="">
+				<label for="phone">Your phone</label>
+				<input class="formular" placeholder="Your phone number" type="tel" id="phone" name="phone" value="">
+				<label for="email">Your mail</label>
+				<input class="formular" placeholder="Your mail" type="email" id="mail" name="email" value="">
+				<label for="message">Your message</label>
+				<textarea placeholder="Your message" name="yourMessage" id="message"></textarea>
+				<button><input class="button" type="button" value="Send !"></button>
+			</form>
+	</div>
 </body>
+
 </html>
