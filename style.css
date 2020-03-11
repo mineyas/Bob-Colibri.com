@@ -1,3 +1,7 @@
+
+
+
+
 /* Global */
 
 * {
@@ -12,7 +16,7 @@
 }
 
 main {
-    margin : 10px 10px;
+    margin : 10px 105px;
 }
 
 .offSetPage {
@@ -252,58 +256,53 @@ slide p {
     display: flex;
     width: 100%;
     justify-content: center;
-    /* flex-wrap: wrap; */
-
-    /* display: -ms-flexbox; 
-    display: flex;
-    -ms-flex-wrap: wrap;
-    padding: 0 4px;
-    justify-content: center;
-     */
-  }
-  .column {
+}
+.column {
       margin: 10px;
-      border: 1px solid black;
+     /* border: 1px solid black; */
       
   }
 
-  .column img{
+.column img{
       width: 350px;
-      height: 350px;
-  }
-/*   
-.column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
-  } */
+      height: 370px;
+}
 
-  .global {
-      /* width: 50%; */   display: flex;
-    width: 770px;
-    justify-content: center;
-    flex-wrap: wrap;
+.global {
+      display: flex;
+      width: 770px;
+      justify-content: center;
+      flex-wrap: wrap;
   }
+
+div .namesan {
+    position: relative;
+    bottom: -257px;
+    right: -90px;
+    font-size: 30px;
+    color: cadetblue;
+    background-color: whitesmoke;
+    opacity: 0.7;
+    text-align: center;
+    border: 1px solid white;
+    width: 157px;
+}
+
+div .namesan:hover {
+    background-color: whitesmoke;
+    border: 3px solid white;
+    width: 180px;
+    right: -70px;
+    bottom: -257px;
+    opacity: 0.7;
+}
+
 section {
     text-align: center;
 }
-/*
 
-img { 
-   
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 50%;
-    /*
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    align-items: center;
-  
-}
 
- */
+
 
 
 @media screen and (min-width: 1200px) {
@@ -336,9 +335,60 @@ img {
 ..######...########..########....##....##.....##.####.########
 */
 
+/*.detailed img
+{
+    height: 150px;
+    width: 150px;
+    object-fit:scale-down ; 
+    object-position: center;    
+}
 
+.detailed img {
+    background-color: black;
+}*/
 
+.detailed img {width:100%}
 
+.detailedRow {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+.detailedColumn {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .detailedColumn img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    /*filter: grayscale(0.4);*/
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .detailedColumn {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+}
 
 /*
 .########..########...#######..########.####.##.......########
@@ -349,6 +399,64 @@ img {
 .##........##....##..##.....##.##........##..##.......##......
 .##........##.....##..#######..##.......####.########.########
 */
+
+.descBob {
+    padding-bottom: 25px;
+}
+
+.maSection {
+    padding: 4%;
+}
+
+.presentation{
+    font-family: 'Montserrat', sans-serif;;
+    size:18;
+    text-align: justify;  
+}
+
+.about, .experience, .tools{
+    display: flex;
+    flex-direction: column;
+    margin:2%;
+    margin-bottom: 4%;
+    align-items: center;
+}
+
+.experience img, .about img, .tools img{
+  width: 100%;  
+  height: 300px; 
+} 
+
+ 
+@media only screen and (min-width:1200px) { 
+    .experience h2, .about h2, .tools h2{
+        text-align: justify;   
+    }
+
+    .about, .experience, .tools{ 
+        display: block;
+    }
+
+    .experience img, .about img, .tools img {
+        width:300px;
+        height: 300px;
+    }
+
+    .about img{
+        margin-right: 2%;
+        float: left; 
+    }
+    
+    .experience img{
+        margin-left: 2%;
+        float: right;
+    }
+    .tools img{
+        margin-right: 2%;
+        float: left;
+    }
+}
+
 /* CSS formular and map of Profile's page */
 
 label {
@@ -364,7 +472,7 @@ form {
 .formular {
     margin-top: 10px;
     width: 80%;
-    height: 25px;
+    height: 30px;
     border: 2px solid rgb(0,192,226);
     border-radius: 5px;
     border-top : 2px solid rgb(201,225,101);
@@ -406,6 +514,43 @@ iframe {
     margin-top: 10px;
 }
 
+.profileButton {
+    margin-top: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+    .infosMedia {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .informations {
+        padding: 5px;
+        display: flex;
+        align-items: flex-start;
+    }
+    
+    iframe {
+        width: 450px;
+        height: 450px;
+    }
+
+    textarea {
+        height: 100px;
+    }
+
+    .formular {
+        height: 45px;
+    }
+
+    input, textarea {
+        padding: 10px;
+        font-size: x-large;
+    }
+
+    
+}
+
 /*
 .########..#######...#######..########.########.########.
 .##.......##.....##.##.....##....##....##.......##.....##
@@ -420,7 +565,7 @@ iframe {
 footer
     
 {
-    background-color: black;
+    background-color: rgb(168, 156, 156);
      color: white;
      font-family: "Montserrat", "Open Sans" 
 
@@ -436,15 +581,22 @@ footer
     
 }
 
-li 
+footer li 
 {
     list-style: none;
    
 
 }
 
-.bottom-footer
+.icons
+{
+    display:flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    
+}
 
+.bottom-footer
 {
 display: flex;
 align-items: center;
