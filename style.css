@@ -1,3 +1,239 @@
+
+
+
+
+/* Global */
+
+* {
+    box-sizing: border-box;
+} 
+@font-face {
+	font-family: "Playlist Script";
+	src: url('Playlist Script.otf');
+}
+
+main {
+    margin : 10px 10px;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Playlist Script';
+    font-size:50px;
+    font-weight: 900;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size:30px;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size:20px;
+    text-align:justify;
+}
+
+button {
+    margin-top: .25 rem;
+    margin-bottom: .25 rem;
+    color:#fff;
+    background-color:#00C0E2;
+    border-color:#00C0E2;
+    font-weight: 300;
+    font-size: 1.5rem;
+    border-radius: .25rem;
+    cursor: pointer;
+    padding:10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    color: #00C0E2;
+    text-decoration:none;
+    font-size:20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a:hover {
+    color:#C9E165;
+}
+
+@media only screen and (min-width:1200px) {
+   
+    main {
+        margin : 10px 105px;
+    }
+}
+/*
+.##....##....###....##.....##.########.....###....########.
+.###...##...##.##...##.....##.##.....##...##.##...##.....##
+.####..##..##...##..##.....##.##.....##..##...##..##.....##
+.##.##.##.##.....##.##.....##.########..##.....##.########.
+.##..####.#########..##...##..##.....##.#########.##...##..
+.##...###.##.....##...##.##...##.....##.##.....##.##....##.
+.##....##.##.....##....###....########..##.....##.##.....##
+*/
+/*Navbar*/
+nav {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: lightgrey;
+    color: white;
+ }
+
+ nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly; 
+    padding : 4px 0px;  
+ }
+
+ nav a {
+    text-decoration: none;
+    color: black;
+ }
+
+ nav li img {
+     display: block;
+     margin: auto;
+     width:30px;
+     height: 30px;
+ }
+
+ /*.navGallery2 {
+     display: none; }*/
+
+ @media only screen and (min-width:1200px) {
+    
+    header {
+        display :flex;
+        background-color: grey;
+        align-items: center;
+    }
+    
+    nav {
+        position: initial ;
+        width: 100%;
+        background-color: grey;
+        color: white;
+        text-align: center;
+    }
+
+    nav ul {
+        justify-content: flex-end;    
+    }
+
+    nav li {
+        margin : 5px; 
+    }
+    
+    /*.navGallery2 {
+        display: block ;
+    }*/
+
+    nav li img {
+        display: none;
+    }
+}
+/*
+.##.....##..#######..##.....##.########
+.##.....##.##.....##.###...###.##......
+.##.....##.##.....##.####.####.##......
+.#########.##.....##.##.###.##.######..
+.##.....##.##.....##.##.....##.##......
+.##.....##.##.....##.##.....##.##......
+.##.....##..#######..##.....##.########
+*/
+/* Home Page */
+
+.carousel
+{
+   height: 300px;
+   background: #D0D1D9;
+}
+
+/*
+slider {
+ display: block;
+ width: 100%;
+ height: 100%;
+ background-color: black;
+ overflow: hidden;
+ position: absolute;
+}
+
+slider > * {
+ position: absolute;
+ display: block;
+ width: 100%;
+ height: 100%;
+ background:#1f1f1f;
+ animation: slide 12s infinite;
+ overflow: hidden;
+}
+
+slide:nth-child(1){
+ left: 0%;
+ animation-delay: -1s;
+ background-image: url(1.jpg);
+ background-size: cover;
+ background-position: center;
+}
+
+slide:nth-child(2){
+ animation-delay: 2s;
+ background-image: url(2.jpg);
+ background-size: cover;
+ background-position: center;
+}
+
+slide:nth-child(3){
+ animation-delay: 5s;
+ background-image: url(3.jpg);
+ background-size: cover;
+ background-position: center;
+}
+
+slide:nth-child(4){
+ left: 0%;
+ animation-delay: 8s;
+ background-image: url(4.jpg);
+ background-size: cover;
+ background-position: center;
+}
+
+slide p {
+ font-family: Comfortaa;
+ font-size: 70px;
+ text-align: center;
+ display: inline-block;
+ width: 100%;
+ margin-top: 340px;
+ color: #fff;
+}
+
+@keyframes slide {
+ 0% { left: 100%; width: 100%; }
+ 5% { left: 0%; }
+ 25% { left: 0%; }
+ 30% { left: -100%; width: 100%; }
+ 30.0001% { left: -100%; width: 0%; }
+ 100% { left: 100%; width: 0%; }
+}
+*/
+/*
+..######...########.##.....##.########.##.....##.########
+.##....##.....##....##.....##.##.......###...###.##......
+.##...........##....##.....##.##.......####.####.##......
+.##...####....##....#########.######...##.###.##.######..
+.##....##.....##....##.....##.##.......##.....##.##......
+.##....##.....##....##.....##.##.......##.....##.##......
+..######......##....##.....##.########.##.....##.########
+*/
+/*GalleryTheme*/
 .row {
     display: flex;
     width: 100%;
@@ -51,7 +287,7 @@ section {
 
 
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 1200px) {
 
 
         /* .column {
@@ -70,6 +306,88 @@ section {
             width: 250px;
         } */
     }
+
+/*
+..######...########..########.########....###....####.##......
+.##....##..##.....##.##..........##......##.##....##..##......
+.##........##.....##.##..........##.....##...##...##..##......
+.##...####.##.....##.######......##....##.....##..##..##......
+.##....##..##.....##.##..........##....#########..##..##......
+.##....##..##.....##.##..........##....##.....##..##..##......
+..######...########..########....##....##.....##.####.########
+*/
+
+
+
+
+
+/*
+.########..########...#######..########.####.##.......########
+.##.....##.##.....##.##.....##.##........##..##.......##......
+.##.....##.##.....##.##.....##.##........##..##.......##......
+.########..########..##.....##.######....##..##.......######..
+.##........##...##...##.....##.##........##..##.......##......
+.##........##....##..##.....##.##........##..##.......##......
+.##........##.....##..#######..##.......####.########.########
+*/
+
+.descBob {
+    padding-bottom: 25px;
+}
+
+.maSection {
+    padding: 4%;
+}
+
+.presentation{
+    font-family: 'Montserrat', sans-serif;;
+    size:18;
+    text-align: justify;  
+}
+
+.about, .experience, .tools{
+    display: flex;
+    flex-direction: column;
+    margin:2%;
+    margin-bottom: 4%;
+    align-items: center;
+}
+
+.experience img, .about img, .tools img{
+  width: 100%;  
+  height: 300px; 
+} 
+
+ 
+@media only screen and (min-width:1200px) { 
+    .experience h2, .about h2, .tools h2{
+        text-align: justify;   
+    }
+
+    .about, .experience, .tools{ 
+        display: block;
+    }
+
+    .experience img, .about img, .tools img {
+        width:300px;
+        height: 300px;
+    }
+
+    .about img{
+        margin-right: 2%;
+        float: left; 
+    }
+    
+    .experience img{
+        margin-left: 2%;
+        float: right;
+    }
+    .tools img{
+        margin-right: 2%;
+        float: left;
+    }
+}
+
 /* CSS formular and map of Profile's page */
 
 label {
@@ -85,7 +403,7 @@ form {
 .formular {
     margin-top: 10px;
     width: 80%;
-    height: 25px;
+    height: 30px;
     border: 2px solid rgb(0,192,226);
     border-radius: 5px;
     border-top : 2px solid rgb(201,225,101);
@@ -122,39 +440,63 @@ iframe {
     justify-content: center;
 }
 
-.button {
-    margin-top: 10px;
-    color:#fff;
-    background-color:#00C0E2;
-    border-color:#00C0E2;
-    font-weight: 300;
-    font-size: 1rem;
-    border-radius: .25rem;
-    cursor: pointer;
-}
-/* main {
-} */
-h1 {
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
-    font-size:35px;
-}
-
-h2 {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 30px;
-}
-
 .informations {
     font-family: 'Montserrat', sans-serif;
     margin-top: 10px;
 }
+
+.profileButton {
+    margin-top: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+    .infosMedia {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .informations {
+        padding: 5px;
+        display: flex;
+        align-items: flex-start;
+    }
+    
+    iframe {
+        width: 450px;
+        height: 450px;
+    }
+
+    textarea {
+        height: 100px;
+    }
+
+    .formular {
+        height: 45px;
+    }
+
+    input, textarea {
+        padding: 10px;
+        font-size: x-large;
+    }
+
+    
+}
+
+/*
+.########..#######...#######..########.########.########.
+.##.......##.....##.##.....##....##....##.......##.....##
+.##.......##.....##.##.....##....##....##.......##.....##
+.######...##.....##.##.....##....##....######...########.
+.##.......##.....##.##.....##....##....##.......##...##..
+.##.......##.....##.##.....##....##....##.......##....##.
+.##........#######...#######.....##....########.##.....##
+*/
 /* CSS du Footer Projet-1*/
 
 footer
     
 {
-    background-color: black;
+    background-color: rgb(168, 156, 156);
      color: white;
      font-family: "Montserrat", "Open Sans" 
 
@@ -170,10 +512,18 @@ footer
     
 }
 
-li 
+footer li 
 {
     list-style: none;
    
+
+}
+
+
+{
+    display:flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
     
 }
 
@@ -184,88 +534,4 @@ display: flex;
 align-items: center;
 justify-content: space-around;
 padding-bottom: 10px;
-
-
 }
-
-
-/* .icons
-{
-    
-
-    
-} */
-   
- 
-
-
-
-* {
-    margin : 0;
-    padding : 0;
-    box-sizing: border-box;
-} 
-
-nav {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: lightgrey;
-    color: white;
- }
-
- nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-evenly; 
-    padding : 4px 0px;  
- }
-
- nav a {
-    text-decoration: none;
-    color: black;
- }
-
- nav li img {
-     display: block;
-     margin: auto;
-     width:30px;
-     height: 30px;
- }
-
- .navGallery2 {
-     display: none; }
-
- @media only screen and (min-width:900px) {
-    
-    header {
-        display :flex;
-        background-color: grey;
-        align-items: center;
-    }
-    
-    nav {
-        position: initial ;
-        width: 100%;
-        background-color: grey;
-        color: white;
-        text-align: center;
-    }
-
-    nav ul {
-        justify-content: flex-end;    
-    }
-
-    nav li {
-        margin : 5px; 
-    }
-    
-    .navGallery2 {
-        display: block ;
-    }
-
-    nav li img {
-        display: none;
-    }
- }
