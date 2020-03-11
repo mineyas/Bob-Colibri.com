@@ -639,11 +639,32 @@ iframe {
     footer
     
 {
-    background-color: rgb(216, 208, 208);
+    background-color: #303036;
+    color: #d3d3d3;
+    height:400px;
+    position: relative;
     font-family: "Montserrat", "Open Sans" ;
-    padding: 40px;
+   
 
     
+}
+
+footer .bottom-footer
+{
+background-color: #343a40;
+color: #686868;
+height: 50px;
+width: 100%;
+position: absolute;
+bottom: 0px;
+left: 0px;
+display: flex;
+align-items: center;
+text-align: center;
+justify-content: space-around;
+
+
+
 }
 
 .main-footer
@@ -665,11 +686,15 @@ footer li img
     list-style: none;
     flex-flow: column ;
     display: block;
-    margin: auto;
     width:30px;
     height: 30px;
+    margin: 0px, 5px, 0px, 5px;
+
+    padding-bottom: 5px;
+
     
 }
+
     
    
 
@@ -678,20 +703,11 @@ footer li img
 .follow
 {
     display: flex;
+   
     
-    
-    
-    
+   
 }
 
 
-.bottom-footer
-{
-display: flex;
-align-items: center;
-justify-content: space-around;
-padding: 20px;
-border-top: rgb(163, 159, 159) solid 1px;
 
-}
 }
