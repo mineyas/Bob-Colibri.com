@@ -388,6 +388,28 @@ iframe {
     margin-top: 10px;
 }
 
+.profileButton {
+    margin-top: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+    .infosMedia {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .informations {
+        padding: 5px;
+        display: flex;
+        align-items: flex-start;
+    }
+    
+    iframe {
+        width: 450px;
+        height: 450px;
+    }
+}
+
 /*
 .########..#######...#######..########.########.########.
 .##.......##.....##.##.....##....##....##.......##.....##
