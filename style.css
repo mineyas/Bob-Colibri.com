@@ -395,6 +395,10 @@ img {
 
 /* CSS formular and map of Profile's page */
 
+.myInfos {
+    text-decoration: underline;
+}
+
 label {
     display : none;
 }
@@ -450,7 +454,7 @@ iframe {
     margin-top: 10px;
 }
 
-.profileButton {
+button {
     margin-top: 10px;
 }
 
