@@ -656,10 +656,21 @@ iframe {
     
 }
 
-footer li 
+footer li
+{
+    list-style: none;
+}
+footer li img
 {
     list-style: none;
     flex-flow: column ;
+    display: block;
+    margin: auto;
+    width:30px;
+    height: 30px;
+    
+}
+    
    
 
 }
@@ -667,6 +678,8 @@ footer li
 .follow
 {
     display: flex;
+    
+    
     
     
 }
