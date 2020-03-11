@@ -37,6 +37,7 @@ h2 {
     font-size:30px;
     margin-top : 50px;
     margin-bottom : 50px;
+    text-align:center;
 }
 
 p {
@@ -78,6 +79,10 @@ a:hover {
 
     h1 {
         font-size:95px;
+    }
+
+    h2 {
+        text-align: left;
     }
 }
 /*
@@ -467,7 +472,7 @@ div .namesan {
   
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
-    .column {
+    .detailedColumn {
       -ms-flex: 100%;
       flex: 100%;
       max-width: 100%;
