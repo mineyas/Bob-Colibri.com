@@ -55,8 +55,8 @@ nav {
      height: 30px;
  }
 
- .navGallery2 {
-     display: none; }
+ /*.navGallery2 {
+     display: none; }*/
 
  @media only screen and (min-width:1200px) {
     
@@ -82,9 +82,9 @@ nav {
         margin : 5px; 
     }
     
-    .navGallery2 {
+    /*.navGallery2 {
         display: block ;
-    }
+    }*/
 
     nav li img {
         display: none;
