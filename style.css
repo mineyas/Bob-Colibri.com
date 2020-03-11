@@ -341,7 +341,7 @@ img {
 }
 
 .maSection {
-    padding: 10px;
+    padding: 4%;
 }
 
 .presentation{
@@ -408,7 +408,7 @@ form {
 .formular {
     margin-top: 10px;
     width: 80%;
-    height: 25px;
+    height: 30px;
     border: 2px solid rgb(0,192,226);
     border-radius: 5px;
     border-top : 2px solid rgb(201,225,101);
@@ -470,6 +470,21 @@ iframe {
         width: 450px;
         height: 450px;
     }
+
+    textarea {
+        height: 100px;
+    }
+
+    .formular {
+        height: 45px;
+    }
+
+    input, textarea {
+        padding: 10px;
+        font-size: x-large;
+    }
+
+    
 }
 
 /*
