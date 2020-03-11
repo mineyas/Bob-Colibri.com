@@ -1,6 +1,8 @@
 
 
-
+html {
+    min-width:200px;
+}
 
 /* Global */
 
@@ -90,14 +92,24 @@ a:hover {
 .##....##.##.....##....###....########..##.....##.##.....##
 */
 /*Navbar*/
+.logo {
+    text-align: center;
+}
+.logo img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    margin:auto;
+  }
+  
 nav {
+    z-index: 9999;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     height: fit-content;
-    background-color: lightgrey;
-    color: white;
+    color: white; 
  }
 
  nav ul {
@@ -105,6 +117,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    background-color: rgba(114,217,228,0.9);
     padding : 4px 0px;
     height: 60px;  
  }
@@ -112,6 +125,8 @@ nav {
  nav a {
     text-decoration: none;
     color: black;
+    white-space: nowrap;
+    font-size: 14px;
  }
 
  nav li img {
@@ -120,17 +135,14 @@ nav {
      width:30px;
      height: 30px;
  }
+ 
  nav a:hover {
-     color:blue;
+     color:white;
  }
- /*.navGallery2 {
-     display: none; }*/
 
- @media only screen and (min-width:500px) {
+ @media only screen and (min-width:800px) {
     
     header {
-        display :flex;
-        background-color: grey;
         align-items: center;
     }
 
@@ -141,18 +153,23 @@ nav {
     nav {
         position: initial ;
         width: 100%;
-        background-color: grey;
         color: white;
         text-align: center;
     }
 
     nav ul {
-        justify-content: flex-end;    
+        justify-content: space-around;   
+        background-color: rgb(114,217,228); 
+        /*rgb(201,220,100)*/
     }
 
     nav li {
         padding: 15px, 20px;
         margin-right: 70px; 
+    }
+
+    nav a {
+        font-size: 20px;
     }
     
     .toTheTop {
