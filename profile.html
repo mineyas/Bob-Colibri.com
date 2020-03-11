@@ -15,20 +15,19 @@
 <body>
 	<header>
 		<div class="logo">
-			<a href="#"><img src="" alt="Logo"></a>
+			<a id="toTheTop" href="#"><img src="" alt="Logo"></a>
 		</div>
 		<nav>
 			<ul>
-				<li class="navHome"><a href="#"><img src="icons/home.svg" alt="">Home</a></li>
-				<li class="navprofile"><img src="icons/home.svg" alt=""><a href="#">Who am I</a></li>
-				<li class="navGallery"><img src="icons/gallery.svg" alt=""><a href="#">Gallery 1</a></li>
+				<li class="navHome"><a href="index.html"><img src="icons/home.svg" alt="">Home</a></li>
+				<li class="navprofile"><a href="profile.html"><img src="icons/home.svg" alt="">Who am I</a></li>
+				<li class="navGallery"><a href="galleryTheme.html"><img src="icons/gallery.svg" alt="">Gallery</a></li>
 				<!-- <li class="navGallery2"><img src="icons/home.svg" alt=""><a href="#">Gallery 2</a></li> -->
-				<li class="navServices"><img src="icons/home.svg" alt=""><a href="#">my services</a></li>
-
+				<li class="toTheTop"><a href="#toTheTop"><img src="icons/home.svg" alt="">To the top</a></li>
 			</ul>
 		</nav>
 	</header>
-
+	<main>
 	<h1>Who am I</h1>
  	<section class="about">
 		<img src="https://via.placeholder.com/150" alt="Bob Colibri's profile picture">
@@ -68,7 +67,7 @@
 	</div>
 	<div id="letMeMessage">
 		<h2>Leave me some message</h2>
-		<form action="sendMessage">
+		<form action="">
 			<label for="name">Name</label>
 			<input class="formular" placeholder="Name" id="name" type="text" name="name" value="">
 			<label for="phone">Your phone</label>
@@ -77,7 +76,7 @@
 			<input class="formular" placeholder="Your mail" type="email" id="mail" name="email" value="">
 			<label for="message">Your message</label>
 			<textarea placeholder="Your message" name="yourMessage" id="message"></textarea>
-			<button><input class="button" type="button" value="Send !"></button>
+			<button class="button" type="submit">Send !</button>
 		</form>
 	</div>
 
@@ -85,6 +84,7 @@
 		FOOTER
 	</footer>
 	
+</main>
 </body>
 
 </html>
