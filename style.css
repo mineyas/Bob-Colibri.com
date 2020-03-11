@@ -497,8 +497,14 @@ section {
     .about, .experience, .tools{ 
         display: block;
     }
+  
+    .tools img {
+        width: 300px;
+        height: 300px;
 
-    .experience img, .about img, .tools img { 
+    }
+
+    .about img, .experience img { 
         width: 300px;
         height: 300px;
         border-radius: 50%;
@@ -516,6 +522,10 @@ section {
     .tools img{
         margin-right: 2%;
         float: left;
+    }
+
+    .presbob{
+        padding-bottom: 150px;
     }
 }
 
