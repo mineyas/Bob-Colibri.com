@@ -16,7 +16,7 @@
 }
 
 main {
-    margin : 10px 105px;
+    margin : 10px 10px;
 }
 
 .offSetPage {
@@ -26,13 +26,17 @@ main {
 h1 {
     text-align: center;
     font-family: 'Playlist Script';
-    font-size:95px;
+    font-size:50px;
     font-weight: 900;
+    margin-top : 50px;
+    margin-bottom : 50px;
 }
 
 h2 {
     font-family: 'Open Sans', sans-serif;
     font-size:30px;
+    margin-top : 50px;
+    margin-bottom : 50px;
 }
 
 p {
@@ -70,6 +74,10 @@ a:hover {
    
     main {
         margin : 10px 150px;
+    }
+
+    h1 {
+        font-size:95px;
     }
 }
 /*
