@@ -26,7 +26,7 @@ main {
 h1 {
     text-align: center;
     font-family: 'Playlist Script';
-    font-size:50px;
+    font-size:95px;
     font-weight: 900;
 }
 
@@ -69,7 +69,7 @@ a:hover {
 @media only screen and (min-width:1200px) {
    
     main {
-        margin : 10px 10px;
+        margin : 10px 150px;
     }
 }
 /*
