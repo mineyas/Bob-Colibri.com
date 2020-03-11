@@ -1,22 +1,66 @@
 /* Global */
 
 * {
-    margin : 0;
-    padding : 0;
     box-sizing: border-box;
 } 
+@font-face {
+	font-family: "Playlist Script";
+	src: url('Playlist Script.otf');
+}
+
+main {
+    margin : 10px 10px;
+}
 
 h1 {
     text-align: center;
-    font-family: 'Open Sans', sans-serif;
-    font-size:35px;
+    font-family: 'Playlist Script';
+    font-size:50px;
+    font-weight: 900;
 }
 
 h2 {
     font-family: 'Open Sans', sans-serif;
-    font-size: 30px;
+    font-size:30px;
 }
 
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size:20px;
+    text-align:justify;
+}
+
+button {
+    margin-top: .25 rem;
+    margin-bottom: .25 rem;
+    color:#fff;
+    background-color:#00C0E2;
+    border-color:#00C0E2;
+    font-weight: 300;
+    font-size: 1.5rem;
+    border-radius: .25rem;
+    cursor: pointer;
+    padding:10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    color: #00C0E2;
+    text-decoration:none;
+    font-size:20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a:hover {
+    color:#C9E165;
+}
+
+@media only screen and (min-width:1200px) {
+   
+    main {
+        margin : 10px 105px;
+    }
+}
 /*
 .##....##....###....##.....##.########.....###....########.
 .###...##...##.##...##.....##.##.....##...##.##...##.....##
@@ -105,13 +149,6 @@ nav {
 {
    height: 300px;
    background: #D0D1D9;
-}
-
-.button
-{
-	border: 1px solid black;
-	width: 200px;
-	padding: 10px;
 }
 
 /*
@@ -345,20 +382,6 @@ iframe {
     display: flex;
     justify-content: center;
 }
-
-.button {
-    margin-top: 10px;
-    color:#fff;
-    background-color:#00C0E2;
-    border-color:#00C0E2;
-    font-weight: 300;
-    font-size: 1rem;
-    border-radius: .25rem;
-    cursor: pointer;
-}
-
-
-/*profile*/
 
 .informations {
     font-family: 'Montserrat', sans-serif;
