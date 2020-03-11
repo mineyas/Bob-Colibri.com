@@ -458,6 +458,10 @@ button {
     margin-top: 10px;
 }
 
+.maSection {
+    margin-top: 10px;
+}
+
 @media screen and (min-width: 1200px) {
     .infosMedia {
         display: flex;
