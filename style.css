@@ -1,3 +1,7 @@
+
+
+
+
 /* Global */
 
 * {
@@ -331,6 +335,64 @@ img {
 .##........##....##..##.....##.##........##..##.......##......
 .##........##.....##..#######..##.......####.########.########
 */
+
+.descBob {
+    padding-bottom: 25px;
+}
+
+.maSection {
+    padding: 10px;
+}
+
+.presentation{
+    font-family: 'Montserrat', sans-serif;;
+    size:18;
+    text-align: justify;  
+}
+
+.about, .experience, .tools{
+    display: flex;
+    flex-direction: column;
+    margin:2%;
+    margin-bottom: 4%;
+    align-items: center;
+}
+
+.experience img, .about img, .tools img{
+  width: 100%;  
+  height: 300px; 
+} 
+
+ 
+@media only screen and (min-width:1200px) { 
+    .experience h2, .about h2, .tools h2{
+        text-align: justify;   
+    }
+
+    .about, .experience, .tools{ 
+        display: block;
+    }
+
+    .experience img, .about img, .tools img {
+        width:300px;
+        height: 300px;
+    }
+
+    .about img{
+        margin-right: 2%;
+        float: left; 
+    }
+    
+    .experience img{
+        margin-left: 2%;
+        float: right;
+    }
+    .tools img{
+        margin-right: 2%;
+        float: left;
+    }
+}
+
 /* CSS formular and map of Profile's page */
 
 label {
@@ -424,7 +486,7 @@ iframe {
 footer
     
 {
-    background-color: black;
+    background-color: rgb(168, 156, 156);
      color: white;
      font-family: "Montserrat", "Open Sans" 
 
@@ -440,11 +502,19 @@ footer
     
 }
 
-li 
+footer li 
 {
     list-style: none;
    
 
+}
+
+
+{
+    display:flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    
 }
 
 .bottom-footer
