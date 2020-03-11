@@ -5,31 +5,65 @@
 /* Global */
 
 * {
-    margin : 0;
-    padding : 0;
     box-sizing: border-box;
 } 
+@font-face {
+	font-family: "Playlist Script";
+	src: url('Playlist Script.otf');
+}
+
+main {
+    margin : 10px 10px;
+}
 
 h1 {
     text-align: center;
-    font-family: 'Open Sans', sans-serif;
-    font-size:35px;
+    font-family: 'Playlist Script';
+    font-size:50px;
+    font-weight: 900;
 }
 
 h2 {
     font-family: 'Open Sans', sans-serif;
-    font-size: 30px;
+    font-size:30px;
 }
 
-.button {
-    margin-top: 10px;
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size:20px;
+    text-align:justify;
+}
+
+button {
+    margin-top: .25 rem;
+    margin-bottom: .25 rem;
     color:#fff;
     background-color:#00C0E2;
     border-color:#00C0E2;
     font-weight: 300;
-    font-size: 1.0rem;
+    font-size: 1.5rem;
     border-radius: .25rem;
     cursor: pointer;
+    padding:10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    color: #00C0E2;
+    text-decoration:none;
+    font-size:20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a:hover {
+    color:#C9E165;
+}
+
+@media only screen and (min-width:1200px) {
+   
+    main {
+        margin : 10px 105px;
+    }
 }
 /*
 .##....##....###....##.....##.########.....###....########.
@@ -103,36 +137,6 @@ nav {
     nav li img {
         display: none;
     }
-<<<<<<< HEAD
-
- 
-    .experience h2, .about h2, .tools h2{
-        text-align: justify;   
-    }
-
-    .about, .experience, .tools{ 
-        display: block;
-    }
-
-    .experience img, .about img, .tools img {
-        width:300px;
-        height: 300px;
-    }
-
-    .about img{
-        margin-right: 2%;
-        float: left; 
-    }
-    
-    .experience img{
-        margin-left: 2%;
-        float: right;
-    }
-    .tools img{
-        margin-right: 2%;
-        float: left;
-    }
-=======
 }
 /*
 .##.....##..#######..##.....##.########
@@ -342,7 +346,7 @@ img {
 .about, .experience, .tools{
     display: flex;
     flex-direction: column;
-    margin: 2%;
+    margin:2%;
     margin-bottom: 4%;
     align-items: center;
 }
@@ -453,7 +457,7 @@ iframe {
 footer
     
 {
-    background-color: black;
+    background-color: rgb(168, 156, 156);
      color: white;
      font-family: "Montserrat", "Open Sans" 
 
@@ -469,11 +473,19 @@ footer
     
 }
 
-li 
+footer li 
 {
     list-style: none;
    
 
+}
+
+
+{
+    display:flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    
 }
 
 .bottom-footer
@@ -483,5 +495,4 @@ display: flex;
 align-items: center;
 justify-content: space-around;
 padding-bottom: 10px;
->>>>>>> 8e5e1cdd497c0c9383054515c73aec13c085a81b
 }
