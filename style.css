@@ -1,8 +1,11 @@
 /* Global */
 
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 } 
+
 @font-face {
 	font-family: "Playlist Script";
 	src: url('Playlist Script.otf');
@@ -10,6 +13,10 @@
 
 main {
     margin : 10px 10px;
+}
+
+.offSetPage {
+    margin-bottom: 60px;
 }
 
 h1 {
@@ -58,7 +65,7 @@ a:hover {
 @media only screen and (min-width:1200px) {
    
     main {
-        margin : 10px 105px;
+        margin : 10px 10px;
     }
 }
 /*
@@ -76,6 +83,7 @@ nav {
     left: 0;
     bottom: 0;
     width: 100%;
+    height: fit-content;
     background-color: lightgrey;
     color: white;
  }
@@ -83,8 +91,10 @@ nav {
  nav ul {
     list-style-type: none;
     display: flex;
-    justify-content: space-evenly; 
-    padding : 4px 0px;  
+    align-items: center;
+    justify-content: space-evenly;
+    padding : 4px 0px;
+    height: 60px;  
  }
 
  nav a {
@@ -98,16 +108,22 @@ nav {
      width:30px;
      height: 30px;
  }
-
+ nav a:hover {
+     color:blue;
+ }
  /*.navGallery2 {
      display: none; }*/
 
- @media only screen and (min-width:1200px) {
+ @media only screen and (min-width:500px) {
     
     header {
         display :flex;
         background-color: grey;
         align-items: center;
+    }
+
+    .offSetPage {
+        margin-bottom: 0px;
     }
     
     nav {
@@ -123,16 +139,18 @@ nav {
     }
 
     nav li {
-        margin : 5px; 
+        padding: 15px, 20px;
+        margin-right: 70px; 
     }
     
-    /*.navGallery2 {
-        display: block ;
-    }*/
+    .toTheTop {
+        display: none ;
+    }
 
     nav li img {
         display: none;
     }
+
 }
 /*
 .##.....##..#######..##.....##.########
