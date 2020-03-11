@@ -402,7 +402,7 @@ iframe {
 footer
     
 {
-    background-color: rgb(168, 156, 156);
+    background-color: rgb(216, 208, 208);
      color: white;
      font-family: "Montserrat", "Open Sans" 
 
@@ -413,6 +413,7 @@ footer
 
 {
     display: flex;
+    
     justify-content: space-around;
     
     
@@ -421,17 +422,18 @@ footer
 footer li 
 {
     list-style: none;
+    flex-flow: column ;
    
 
 }
 
-
+.follow
 {
-    display:flex;
-    flex-flow: column wrap;
-    align-items: flex-start;
+    display: flex;
+    
     
 }
+
 
 .bottom-footer
 
@@ -440,5 +442,6 @@ display: flex;
 align-items: center;
 justify-content: space-around;
 padding-bottom: 10px;
+border-top: rgb(163, 159, 159) solid 1px;
 }
 
