@@ -131,7 +131,7 @@ nav {
  /*.navGallery2 {
      display: none; }*/
 
- @media only screen and (min-width:500px) {
+ @media only screen and (min-width:1200px) {
     
     header {
         display :flex;
@@ -308,7 +308,27 @@ ul.slides input {
 }
 
 
-.input-1:checked + .slide-container .nav label { display: block; }
+.input-1:checked + .slide-container .nav label { 
+    display: block; 
+}
+
+.blocLast {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.last {
+    width: 100%;
+    box-shadow: 5px 2px 5px grey;
+}
+
+@media screen and (min-width: 1200px) {
+    .last2 {
+        margin-bottom: 10px;
+    }
+}
+
 /*
 ..######...########.##.....##.########.##.....##.########
 .##....##.....##....##.....##.##.......###...###.##......
@@ -513,7 +533,7 @@ div .namesan {
 .experience img, .about img, .tools img{
     object-fit: cover;
     width: 100%; 
-    height: 50%;
+    box-shadow: 5px 2px 5px grey;
 }
 
 @media only screen and (min-width:1200px) { 
@@ -525,13 +545,9 @@ div .namesan {
         display: block;
     }
   
-    .tools img {
-        width: 300px;
-        height: 300px;
+   
 
-    }
-
-    .about img, .experience img { 
+    .about img, .experience img, .tools img { 
         width: 300px;
         height: 300px;
         border-radius: 50%;
@@ -557,6 +573,10 @@ div .namesan {
 }
 
 /* CSS formular and map of Profile's page */
+
+.myInfos {
+    text-decoration: underline;
+}
 
 label {
     display : none;
@@ -613,7 +633,11 @@ iframe {
     margin-top: 10px;
 }
 
-.profileButton {
+button {
+    margin-top: 10px;
+}
+
+.maSection {
     margin-top: 10px;
 }
 
