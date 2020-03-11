@@ -17,6 +17,16 @@ h2 {
     font-size: 30px;
 }
 
+.button {
+    margin-top: 10px;
+    color:#fff;
+    background-color:#00C0E2;
+    border-color:#00C0E2;
+    font-weight: 300;
+    font-size: 1rem;
+    border-radius: .25rem;
+    cursor: pointer;
+}
 /*
 .##....##....###....##.....##.########.....###....########.
 .###...##...##.##...##.....##.##.....##...##.##...##.....##
@@ -105,13 +115,6 @@ nav {
 {
    height: 300px;
    background: #D0D1D9;
-}
-
-.button
-{
-	border: 1px solid black;
-	width: 200px;
-	padding: 10px;
 }
 
 /*
@@ -345,20 +348,6 @@ iframe {
     display: flex;
     justify-content: center;
 }
-
-.button {
-    margin-top: 10px;
-    color:#fff;
-    background-color:#00C0E2;
-    border-color:#00C0E2;
-    font-weight: 300;
-    font-size: 1rem;
-    border-radius: .25rem;
-    cursor: pointer;
-}
-
-
-/*profile*/
 
 .informations {
     font-family: 'Montserrat', sans-serif;
