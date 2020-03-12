@@ -355,6 +355,18 @@ ul.slides input {
 
 
 
+.nxtGal {
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.txtUndr {
+    display: flex;
+    justify-content: center;
+}
+
 @media screen and (min-width: 1200px) {
     .last2 {
         margin-bottom: 10px;
@@ -620,23 +632,32 @@ ul.slides input {
 
 /* CSS formular and map of Profile's page */
 
+form {
+    display: flex;
+    flex-direction: column;
+}
+
 .myInfos {
     text-decoration: underline;
 }
 
- label {
-    display : flex;
-    flex-direction: column;
-    align-items: flex-start;
-} 
-
-form {
-    display: flex; 
-    flex-direction: column;
-    align-items: center;
+.formular {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.formular {
+.area {
+    display: flex;
+    justify-content: space-between;
+}
+
+.marge {
+    margin-top : 12px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.borderText {
     margin-top: 10px;
     width: 80%;
     height: 30px;
@@ -682,12 +703,9 @@ iframe {
     margin-top: 10px;
 }
 
-.button {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.maSection {
+.blocButton {
+    display: flex;
+    justify-content: flex-end;
     margin-top: 10px;
 }
 
@@ -708,7 +726,7 @@ iframe {
         height: 450px;
     }
 
-    textarea {
+    .txtArea {
         height: 100px;
     }
 
@@ -716,12 +734,15 @@ iframe {
         height: 45px;
     }
 
-    input, textarea {
+    textarea {
         padding: 10px;
         font-size: x-large;
     }
 
-    
+    .button {
+        display: flex;
+        text-align: right;
+    }
 }
 
 /*
