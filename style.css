@@ -847,6 +847,7 @@ p, .informations {
     display: flex;
     justify-content: flex-end;
     padding: 20px;
+}
 
     .infosMedia {
         display: flex;
