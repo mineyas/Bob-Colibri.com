@@ -1,6 +1,9 @@
 
 
-
+html {
+    min-width:200px;
+    margin : 10px 10px;
+}
 
 /* Global */
 
@@ -8,6 +11,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 } 
 
 @font-face {
@@ -15,9 +19,9 @@
 	src: url('Playlist Script.otf');
 }
 
-main {
+/* main {
     margin : 10px 10px;
-}
+} */
 
 .offSetPage {
     margin-bottom: 60px;
@@ -37,6 +41,7 @@ h2 {
     font-size:30px;
     margin-top : 50px;
     margin-bottom : 50px;
+    text-align:center;
 }
 
 p {
@@ -45,7 +50,7 @@ p {
     text-align:justify;
 }
 
-button {
+button, .homeButton {
     margin-top: .25 rem;
     margin-bottom: .25 rem;
     color:#fff;
@@ -72,12 +77,16 @@ a:hover {
 
 @media only screen and (min-width:1200px) {
    
-    main {
-        margin : 10px 150px;
+    html {
+        margin : 10px 300px;
     }
 
     h1 {
         font-size:95px;
+    }
+
+    h2 {
+        text-align: left;
     }
 }
 /*
@@ -90,14 +99,24 @@ a:hover {
 .##....##.##.....##....###....########..##.....##.##.....##
 */
 /*Navbar*/
+.logo {
+    text-align: center;
+}
+.logo img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    margin:auto;
+  }
+  
 nav {
+    z-index: 9999;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     height: fit-content;
-    background-color: lightgrey;
-    color: white;
+    color: white; 
  }
 
  nav ul {
@@ -105,13 +124,16 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    background-color: rgba(114,217,228,0.9);
     padding : 4px 0px;
     height: 60px;  
  }
 
- nav a {
+ nav a, nav a:hover {
     text-decoration: none;
     color: black;
+    white-space: nowrap;
+    font-size: 14px;
  }
 
  nav li img {
@@ -120,17 +142,12 @@ nav {
      width:30px;
      height: 30px;
  }
- nav a:hover {
-     color:blue;
- }
- /*.navGallery2 {
-     display: none; }*/
+ 
+
 
  @media only screen and (min-width:1200px) {
     
     header {
-        display :flex;
-        background-color: grey;
         align-items: center;
     }
 
@@ -141,18 +158,28 @@ nav {
     nav {
         position: initial ;
         width: 100%;
-        background-color: grey;
         color: white;
         text-align: center;
     }
 
     nav ul {
-        justify-content: flex-end;    
+        justify-content: space-around;   
+        background-color: rgb(114,217,228); 
+        /*rgb(201,220,100)*/
     }
 
     nav li {
         padding: 15px, 20px;
         margin-right: 70px; 
+    }
+
+    nav a {
+        font-size: 20px;
+    }
+    
+    nav a:hover {
+        color:white;
+        font-size: 24px;
     }
     
     .toTheTop {
@@ -334,6 +361,9 @@ ul.slides input {
 ..######......##....##.....##.########.##.....##.########
 */
 /*GalleryTheme*/
+
+
+
 .row {
     display: flex;
     width: 100%;
@@ -347,6 +377,7 @@ ul.slides input {
 .column img{
       width: 350px;
       height: 370px;
+      box-shadow: 5px 2px 5px grey;
 }
 
 .global {
@@ -358,77 +389,72 @@ ul.slides input {
 }
 
 .galleryback {
-    margin: 0% 3%;
-    background: rgba(245, 183, 177, 0.2);
+    margin: 0% 0%;
+    background: rgba(169, 223, 191, 0.2);
    
 }
+  
 
-
-
-div .namesan:hover {
-    background-color: whitesmoke;
-    border: 3px solid white;
-    width: 180px;
-    right: -70px;
-    bottom: -257px;
-    opacity: 0.7;
-}
-
-
-
- 
-div .namesan {
+  div .namesan {
     position: relative;
-    bottom: -257px;
-    right: -109px;
-    font-size: 30px;
-    color: cadetblue;
-    background-color: whitesmoke;
-    opacity: 0.7;
-    text-align: center;
-    border: 1px solid white;
-    width: 157px;
-  }
-
-
-
-@media screen and (min-width: 1200px) {
-
-    .galleryback {
-        margin: 0% 10%;
-
-    }
-   div .namesan {
-    position: relative;
-    bottom: -257px;
+    bottom: -350px;
     right: -90px;
     font-size: 30px;
     color: cadetblue;
     background-color: whitesmoke;
-    opacity: 0.7;
+    opacity: 0.6;
+    text-align: center;
+    border: 1px solid white;
+    width: 157px;
+  }
+  div .namesan:hover {
+    background-color: whitesmoke;
+    border: 3px solid white;
+    width: 180px;
+    right: -80px;
+    bottom: -340px;
+    opacity: 0.9;
+    color: cadetblue;
+   }
+
+
+@media screen and (min-width: 1200px) {
+
+    .galtit {
+        margin-top: 0px;
+    }
+
+    .galleryback {
+        margin: 0% 10%;
+        background: rgba(169, 223, 191, 0.2);
+       
+   }
+   
+   div .namesan {
+    position: relative;
+    bottom: -208px;
+    right: -102px;
+    font-size: 30px;
+    color: cadetblue;
+    background-color: whitesmoke;
+    opacity: 0.4;
     text-align: center;
     border: 1px solid white;
     width: 157px;
 }
 
+   div .namesan:hover {
+    background-color: whitesmoke;
+    border: 3px solid white;
+    width: 180px;
+    right: -94px;
+    bottom: -221px;
+    opacity: 0.9;
+    color: cadetblue;
+   }
 
-        /* .column {
-          -ms-flex: 100%;
-          flex: 100%;
-          max-width: 100%;
-          border: 1px solid black;
-          background-color: lightgray;
-          height: 350px;
-          margin-bottom: 5%;
-        } */
 
-        /* img {
-            display: block;
-            height: 300px;
-            width: 250px;
-        } */
-    }
-
+}
 /*
 ..######...########..########.########....###....####.##......
 .##....##..##.....##.##..........##......##.##....##..##......
@@ -475,6 +501,15 @@ div .namesan {
     width: 100%;
     /*filter: grayscale(0.4);*/
   }
+
+  a.detailed {
+      color:white;
+  }
+
+  button.detailed {
+      display:block;
+        margin: 50px auto 50px auto;
+  }
   
   /* Responsive layout - makes a two column-layout instead of four columns */
   @media screen and (max-width: 800px) {
@@ -487,7 +522,7 @@ div .namesan {
   
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
-    .column {
+    .detailedColumn {
       -ms-flex: 100%;
       flex: 100%;
       max-width: 100%;
