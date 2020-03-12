@@ -346,6 +346,18 @@ ul.slides input {
     box-shadow: 5px 2px 5px grey;
 }
 
+.nxtGal {
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.txtUndr {
+    display: flex;
+    justify-content: center;
+}
+
 @media screen and (min-width: 1200px) {
     .last2 {
         margin-bottom: 10px;
