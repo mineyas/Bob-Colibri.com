@@ -598,9 +598,11 @@ div .namesan:hover {
     text-decoration: underline;
 }
 
-label {
-    display : none;
-}
+ label {
+    display : flex;
+    flex-direction: column;
+    align-items: flex-start;
+} 
 
 form {
     display: flex; 
