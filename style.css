@@ -32,7 +32,8 @@ h1 {
     font-family: 'Playlist Script';
     font-size:50px;
     font-weight: 900;
-    margin-top : 50px;
+    margin-top : 0px;
+    padding: 18px;
     margin-bottom : 50px;
 }
 
@@ -398,7 +399,21 @@ ul.slides input {
     display: flex;
     justify-content: center;
 }
+.pargraphe-animals
+{
+    font-family: 'Montserrat', sans-serif;
+    size:18px;
+    text-align: justify;
+}
 
+p
+{
+    line-height: 1.8em;
+}
+.section-paragraphe
+{
+    text-align: center;
+}
 @media screen and (min-width: 1200px) {
     .last2 {
         margin-bottom: 10px;
@@ -452,10 +467,10 @@ ul.slides input {
       margin-bottom: 100px;
 }
 
-.galleryback {
+
+main {
     margin: 0% 0%;
-    background: rgba(169, 223, 191, 0.2);
-   
+    background: rgba(206, 218, 130, 0.1);
 }
   
 
@@ -469,7 +484,7 @@ ul.slides input {
     opacity: 0.6;
     text-align: center;
     border: 1px solid white;
-    width: 157px;
+    width: 180px;
   }
   div .namesan:hover {
     background-color: whitesmoke;
@@ -487,32 +502,37 @@ ul.slides input {
     .galtit {
         margin-top: 0px;
     }
+    
+    main {
+       background: rgba(206, 218, 130, 0.1);
+}
 
+    /*
     .galleryback {
-        margin: 0% 10%;
-        background: rgba(169, 223, 191, 0.2);
+        
+        background: rgba(206, 218, 130, 0.1);
        
-   }
+   }*/
    
    div .namesan {
     position: relative;
-    bottom: -208px;
-    right: -102px;
+    bottom: -287px;
+    right: -86px;
     font-size: 30px;
     color: cadetblue;
     background-color: whitesmoke;
     opacity: 0.4;
     text-align: center;
     border: 1px solid white;
-    width: 157px;
+    width: 180px;
 }
 
    div .namesan:hover {
     background-color: whitesmoke;
     border: 3px solid white;
-    width: 180px;
-    right: -94px;
-    bottom: -221px;
+    width: 190px;
+    right: -82px;
+    bottom: -276px;
     opacity: 0.9;
     color: cadetblue;
    }
