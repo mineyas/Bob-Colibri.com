@@ -803,19 +803,27 @@ main {
 /* CSS formular and map of Profile's page */
 
 form {
+    display: flex; 
+    flex-direction: column;
+    align-content: space-around;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.form{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
 }
+
+
 
 .myInfos {
     text-decoration: underline;
 }
 
-.formular {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
 
 .area {
     display: flex;
@@ -825,11 +833,14 @@ form {
 .marge {
     margin-top : 12px;
     font-family: 'Montserrat', sans-serif;
-}
+} 
 
-.borderText {
+.email:required{
+    border-left-color: palegreen;
+  }
+
+.email, .name {
     margin-top: 10px;
-    width: 80%;
     height: 30px;
     border: 2px solid rgb(0,192,226);
     border-radius: 5px;
@@ -840,7 +851,6 @@ form {
 
 textarea {
     margin-top: 10px;
-    width: 80%;
     height: 60px;
     border: 2px solid rgb(0,192,226);
     border-radius: 5px;
@@ -849,7 +859,101 @@ textarea {
     border-right: 2px solid rgb(201,225,101);
     box-shadow: 2px 2px 1px grey;
     resize: vertical;
+} 
+
+iframe {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 2px solid rgb(0,192,226);
+    border-top : 2px solid rgb(201,225,101);
+    border-right: 2px solid rgb(201,225,101);
+    box-shadow: 2px 2px 1px grey;
 }
+
+#map {
+    display: flex;
+    justify-content: center;
+}
+
+p, .informations {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.blocButton {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+
+
+form {
+    display: flex; 
+    flex-direction: column;
+    align-content: space-around;
+    box-sizing: border-box;
+    width: 100%;
+    resize: vertical;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+
+.myInfos {
+    text-decoration: underline;
+}
+
+
+.area {
+    display: flex;
+    justify-content: space-between;
+}
+
+.marge {
+    margin-top : 12px;
+    font-family: 'Montserrat', sans-serif;
+} 
+
+.email:required{
+    border-left-color: palegreen;
+  }
+
+.email, .name {
+    margin-top: 10px;
+    height: 30px;
+    border: 2px solid rgb(0,192,226);
+    border-radius: 5px;
+    border-top : 2px solid rgb(201,225,101);
+    border-right: 2px solid rgb(201,225,101);
+    box-shadow: 2px 2px 1px grey;
+}
+
+textarea {
+    margin-top: 10px;
+    height: 60px;
+    border: 2px solid rgb(0,192,226);
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    border-top : 2px solid rgb(201,225,101);
+    border-right: 2px solid rgb(201,225,101);
+    box-shadow: 2px 2px 1px grey;
+    resize: vertical;
+} 
 
 iframe {
     display: flex;
@@ -877,10 +981,8 @@ p, .informations {
 .blocButton {
     display: flex;
     justify-content: flex-end;
-    margin-top: 10px;
-}
+    padding: 20px;
 
-@media screen and (min-width: 1200px) {
     .infosMedia {
         display: flex;
         flex-direction: row;
