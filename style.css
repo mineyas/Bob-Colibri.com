@@ -629,8 +629,9 @@ iframe {
     margin-top: 10px;
 }
 
-button {
+.button {
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .maSection {
