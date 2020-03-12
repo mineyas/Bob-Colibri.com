@@ -51,7 +51,7 @@ p {
     hyphens:auto;
 }
 
-button {
+button, .homeButton {
     margin-top: .25 rem;
     margin-bottom: .25 rem;
     color:#fff;
