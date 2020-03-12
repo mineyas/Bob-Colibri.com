@@ -580,7 +580,8 @@ ul.slides input {
     opacity: 1;
     background-color: rgba(114,217,228,0.9);
     color: black;
-    font-size: 16px;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
     padding: 16px 32px;
 }
 
