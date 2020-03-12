@@ -1,6 +1,9 @@
 
 
-
+html {
+    min-width:200px;
+    margin : 10px 10px;
+}
 
 /* Global */
 
@@ -8,6 +11,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 } 
 
 @font-face {
@@ -15,9 +19,9 @@
 	src: url('Playlist Script.otf');
 }
 
-main {
+/* main {
     margin : 10px 10px;
-}
+} */
 
 .offSetPage {
     margin-bottom: 60px;
@@ -73,8 +77,8 @@ a:hover {
 
 @media only screen and (min-width:1200px) {
    
-    main {
-        margin : 10px 150px;
+    html {
+        margin : 10px 300px;
     }
 
     h1 {
@@ -95,14 +99,24 @@ a:hover {
 .##....##.##.....##....###....########..##.....##.##.....##
 */
 /*Navbar*/
+.logo {
+    text-align: center;
+}
+.logo img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    margin:auto;
+  }
+  
 nav {
+    z-index: 9999;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     height: fit-content;
-    background-color: lightgrey;
-    color: white;
+    color: white; 
  }
 
  nav ul {
@@ -110,13 +124,16 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    background-color: rgba(114,217,228,0.9);
     padding : 4px 0px;
     height: 60px;  
  }
 
- nav a {
+ nav a, nav a:hover {
     text-decoration: none;
     color: black;
+    white-space: nowrap;
+    font-size: 14px;
  }
 
  nav li img {
@@ -125,17 +142,12 @@ nav {
      width:30px;
      height: 30px;
  }
- nav a:hover {
-     color:blue;
- }
- /*.navGallery2 {
-     display: none; }*/
+ 
+
 
  @media only screen and (min-width:1200px) {
     
     header {
-        display :flex;
-        background-color: grey;
         align-items: center;
     }
 
@@ -146,18 +158,28 @@ nav {
     nav {
         position: initial ;
         width: 100%;
-        background-color: grey;
         color: white;
         text-align: center;
     }
 
     nav ul {
-        justify-content: flex-end;    
+        justify-content: space-around;   
+        background-color: rgb(114,217,228); 
+        /*rgb(201,220,100)*/
     }
 
     nav li {
         padding: 15px, 20px;
         margin-right: 70px; 
+    }
+
+    nav a {
+        font-size: 20px;
+    }
+    
+    nav a:hover {
+        color:white;
+        font-size: 24px;
     }
     
     .toTheTop {
@@ -577,9 +599,11 @@ ul.slides input {
     text-decoration: underline;
 }
 
-label {
-    display : none;
-}
+ label {
+    display : flex;
+    flex-direction: column;
+    align-items: flex-start;
+} 
 
 form {
     display: flex; 
@@ -608,6 +632,7 @@ textarea {
     border-top : 2px solid rgb(201,225,101);
     border-right: 2px solid rgb(201,225,101);
     box-shadow: 2px 2px 1px grey;
+    resize: vertical;
 }
 
 iframe {
@@ -632,8 +657,9 @@ iframe {
     margin-top: 10px;
 }
 
-button {
+.button {
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .maSection {
