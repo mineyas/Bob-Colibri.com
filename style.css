@@ -50,7 +50,7 @@ p {
     text-align:justify;
 }
 
-button {
+button, .homeButton {
     margin-top: .25 rem;
     margin-bottom: .25 rem;
     color:#fff;
