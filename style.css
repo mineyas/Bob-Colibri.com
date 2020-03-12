@@ -697,9 +697,10 @@ iframe {
     justify-content: center;
 }
 
-.informations {
+p, .informations {
     font-family: 'Montserrat', sans-serif;
-    margin-top: 10px;
+    margin-top: 25px;
+    text-align: center;
 }
 
 .blocButton {
