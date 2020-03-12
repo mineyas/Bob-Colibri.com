@@ -203,10 +203,10 @@ nav {
 */
 /* Home Page */
 
-.carousel {
+/* .carousel {
     margin-left: 15%;
     margin-right: 15%;
-}
+} */
 
 ul.slides {
     display: block;
@@ -345,10 +345,37 @@ ul.slides input {
     width: 100%;
     box-shadow: 5px 2px 5px grey;
 }
+.carousel {
+    display:none;
+}
+
+.mobile {
+    width:100%;
+}
+
+
+
+.nxtGal {
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.txtUndr {
+    display: flex;
+    justify-content: center;
+}
 
 @media screen and (min-width: 1200px) {
     .last2 {
         margin-bottom: 10px;
+    }
+    .carousel {
+        display:block;
+    }
+    .mobile {
+        display:none;
     }
 }
 
