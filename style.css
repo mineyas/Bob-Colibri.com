@@ -203,12 +203,46 @@ nav {
 */
 /* Home Page */
 
+div#slider {
+    width:100%;
+    max-width:1917px;
+    overflow:hidden;
+}
+
+div#slider figure {
+    position:relative;
+    width:300%;
+    margin:0;
+    padding:0;
+    animation: 15s slidy infinite;
+}
+
+div#slider figure img {
+    width:33.33%;
+    height:auto;
+    float:left;
+}
+
+@keyframes slidy {
+    0% {left: 0%;}
+    20% {left: 0%;}
+    25% {left: -100%;}
+    45% {left: -100%;}
+    50% {left: -200%;}
+    70% {left: -200%;}
+    75% {left: -100%;}
+    95% {left: -100%;}
+    100% {left: 0%;}
+}
+
+
+
 /* .carousel {
     margin-left: 15%;
     margin-right: 15%;
 } */
 
-ul.slides {
+/* ul.slides {
     display: block;
     position: relative;
     height: 600px;
@@ -333,7 +367,7 @@ ul.slides input {
 
 .input-1:checked + .slide-container .nav label { 
     display: block; 
-}
+} */
 
 .blocLast {
     display: flex;
@@ -345,20 +379,18 @@ ul.slides input {
     width: 100%;
     box-shadow: 5px 2px 5px grey;
 }
-.carousel {
+/* .carousel {
     display:none;
 }
 
 .mobile {
     width:100%;
-}
-
-
+} */
 
 .nxtGal {
     margin: 5px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -385,11 +417,15 @@ p
     .last2 {
         margin-bottom: 10px;
     }
-    .carousel {
+    /* .carousel {
         display:block;
     }
     .mobile {
         display:none;
+    } */
+
+    .nxtGal {
+        flex-direction: row;
     }
 }
 
@@ -519,6 +555,51 @@ p
     background-color: black;
 }*/
 
+/* Hover description for desktop versions */
+.container {
+    position: relative;
+  }
+.container:hover .image {
+    opacity: 0.3;
+  }
+  
+.container:hover .middle {
+    opacity: 1;
+  }
+
+  .image  {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+
+ .middle {
+        padding-right: 10px; 
+        padding-left: 10px;    
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        width: fit-content;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+.textimg{
+    opacity: 1;
+    background-color: rgba(114,217,228,0.9);
+    color: black;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+/* Images for desktop versions */
+
 .detailed img {width:100%}
 
 .detailedRow {
@@ -536,7 +617,7 @@ p
     max-width: 25%;
     padding: 0 4px;
   }
-  
+
   .detailedColumn img {
     margin-top: 8px;
     vertical-align: middle;
@@ -560,7 +641,38 @@ p
       flex: 50%;
       max-width: 50%;
     }
+
+ /* Images descriptions    */
+
+ .container {
+    position: relative;
+    pointer-events: none;
   }
+
+.container:hover .image {
+    opacity: 0.3;
+    pointer-events: none;
+    }
+  
+.container:hover .middle {
+    opacity: 1;
+    pointer-events: none;
+}
+
+.middle{
+    display: contents;
+    opacity: 1;
+    padding-right: 0px;
+    padding-left: 0px;
+    position: absolute;
+    width: 100%;
+    top: 92%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+}
   
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
@@ -568,7 +680,44 @@ p
       -ms-flex: 100%;
       flex: 100%;
       max-width: 100%;
-    }
+    } 
+
+ /* Images descriptions    */
+
+ .container {
+    position: relative;
+    pointer-events: none;
+  }
+
+.container:hover .image {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+  
+.container:hover .middle {
+    opacity: 1;
+    pointer-events: none;
+}
+
+.middle{
+    display: contents;
+    opacity: 1;
+    padding-right: 0px;
+    padding-left: 0px;
+    position: absolute;
+    width: 100%;
+    top: 92%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+
+  
+
+
+
 }
 
 /*
@@ -712,9 +861,10 @@ iframe {
     justify-content: center;
 }
 
-.informations {
+p, .informations {
     font-family: 'Montserrat', sans-serif;
-    margin-top: 10px;
+    margin-top: 25px;
+    text-align: center;
 }
 
 .blocButton {
