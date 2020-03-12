@@ -2,7 +2,7 @@
 
 html {
     min-width:200px;
-    margin : 10px 10px;
+    margin : 10px 10px 0px 10px;
 }
 
 /* Global */
@@ -60,9 +60,9 @@ p {
 button, .homeButton {
     margin-top: .25 rem;
     margin-bottom: .25 rem;
-    color:#fff;
-    background-color:#00C0E2;
-    border-color:#00C0E2;
+    color:#000;
+    background-color:rgb(114,217,228);
+    border-color:rgb(114,217,228);
     font-weight: 300;
     font-size: 1.5rem;
     border-radius: .25rem;
@@ -85,7 +85,7 @@ a:hover {
 @media only screen and (min-width:1200px) {
    
     html {
-        margin : 10px 300px;
+        margin : 10px 15% 0px 15%;
     }
 
     h1 {
@@ -472,7 +472,8 @@ main {
     opacity: 1;
     background-color: rgba(114,217,228,0.9);
     color: black;
-    font-size: 16px;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
     padding: 16px 32px;
 }
 
@@ -798,7 +799,66 @@ p, .informations {
 */
 /* CSS du Footer Projet-1*/
 
-footer
+footer { 
+    margin-top: auto;
+    background-color: rgb(201,220,100);
+    padding: 10px;
+}
+
+.socialLinks {
+    display: flex;
+    justify-content: center;
+}
+
+.internalLinks, .mentionsLinks {
+    display:none;
+}
+
+footer img {
+    margin: 0 20px;
+    font-size: 0;
+    width: 30px;
+}
+
+.textMobile {
+    margin-top: 4px;
+    margin:auto;
+    text-align: center;
+    width: 90%;
+    font-size: 12px;
+}
+
+.textMobile em {
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
+
+/*footer {
+    display: flex;
+    background-color: #303030;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    margin-top: auto;
+}
+
+footer a {
+  color : #cfcfcf;
+  font-weight: bold;
+  text-decoration: none;
+  padding-top: 10px;
+}
+
+
+
+.externalLinks {
+    margin-left: auto;
+}
+*/
+/* footer
     
 {
     background-color: rgb(168, 156, 156);
@@ -838,4 +898,4 @@ display: flex;
 align-items: center;
 justify-content: space-around;
 padding-bottom: 10px;
-}
+} */
