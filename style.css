@@ -39,6 +39,7 @@ h2 {
     font-size:30px;
     margin-top : 50px;
     margin-bottom : 50px;
+    text-align:center;
 }
 
 p {
@@ -80,6 +81,10 @@ a:hover {
 
     h1 {
         font-size:95px;
+    }
+
+    h2 {
+        text-align: left;
     }
 }
 /*
@@ -138,7 +143,7 @@ nav {
  
 
 
- @media only screen and (min-width:800px) {
+ @media only screen and (min-width:1200px) {
     
     header {
         align-items: center;
@@ -323,7 +328,27 @@ ul.slides input {
 }
 
 
-.input-1:checked + .slide-container .nav label { display: block; }
+.input-1:checked + .slide-container .nav label { 
+    display: block; 
+}
+
+.blocLast {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.last {
+    width: 100%;
+    box-shadow: 5px 2px 5px grey;
+}
+
+@media screen and (min-width: 1200px) {
+    .last2 {
+        margin-bottom: 10px;
+    }
+}
+
 /*
 ..######...########.##.....##.########.##.....##.########
 .##....##.....##....##.....##.##.......###...###.##......
@@ -342,8 +367,7 @@ ul.slides input {
 .column {
       margin: 10px;
      /* border: 1px solid black; */
-      
-  }
+}
 
 .column img{
       width: 350px;
@@ -355,9 +379,51 @@ ul.slides input {
       width: 770px;
       justify-content: center;
       flex-wrap: wrap;
+      margin-bottom: 100px;
+}
+
+.galleryback {
+    margin: 0% 3%;
+    background: rgba(245, 183, 177, 0.2);
+   
+}
+
+
+
+div .namesan:hover {
+    background-color: whitesmoke;
+    border: 3px solid white;
+    width: 180px;
+    right: -70px;
+    bottom: -257px;
+    opacity: 0.7;
+}
+
+
+
+ 
+div .namesan {
+    position: relative;
+    bottom: -257px;
+    right: -109px;
+    font-size: 30px;
+    color: cadetblue;
+    background-color: whitesmoke;
+    opacity: 0.7;
+    text-align: center;
+    border: 1px solid white;
+    width: 157px;
   }
 
-div .namesan {
+
+
+@media screen and (min-width: 1200px) {
+
+    .galleryback {
+        margin: 0% 10%;
+
+    }
+   div .namesan {
     position: relative;
     bottom: -257px;
     right: -90px;
@@ -369,25 +435,6 @@ div .namesan {
     border: 1px solid white;
     width: 157px;
 }
-
-div .namesan:hover {
-    background-color: whitesmoke;
-    border: 3px solid white;
-    width: 180px;
-    right: -70px;
-    bottom: -257px;
-    opacity: 0.7;
-}
-
-section {
-    text-align: center;
-}
-
-
-
-
-
-@media screen and (min-width: 1200px) {
 
 
         /* .column {
@@ -465,7 +512,7 @@ section {
   
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
-    .column {
+    .detailedColumn {
       -ms-flex: 100%;
       flex: 100%;
       max-width: 100%;
@@ -506,7 +553,7 @@ section {
 .experience img, .about img, .tools img{
     object-fit: cover;
     width: 100%; 
-    height: 50%;
+    box-shadow: 5px 2px 5px grey;
 }
 
 @media only screen and (min-width:1200px) { 
@@ -517,8 +564,10 @@ section {
     .about, .experience, .tools{ 
         display: block;
     }
+  
+   
 
-    .experience img, .about img, .tools img { 
+    .about img, .experience img, .tools img { 
         width: 300px;
         height: 300px;
         border-radius: 50%;
@@ -537,9 +586,17 @@ section {
         margin-right: 2%;
         float: left;
     }
+
+    .presbob{
+        padding-bottom: 150px;
+    }
 }
 
 /* CSS formular and map of Profile's page */
+
+.myInfos {
+    text-decoration: underline;
+}
 
 label {
     display : none;
@@ -596,7 +653,11 @@ iframe {
     margin-top: 10px;
 }
 
-.profileButton {
+button {
+    margin-top: 10px;
+}
+
+.maSection {
     margin-top: 10px;
 }
 
