@@ -94,6 +94,7 @@ a:hover {
 
     h2 {
         text-align: left;
+        margin-left: 10px;
     }
 }
 /*
@@ -262,8 +263,6 @@ div#slider figure img {
 .nxtGal {
     margin: 10px 0px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .txtUndr {
@@ -434,6 +433,7 @@ main {
 }*/
 
 /* Hover description for desktop versions */
+
 .container {
     position: relative;
   }
@@ -589,14 +589,7 @@ main {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-}
-
-
-
-  
-
-
-
+    }
 }
 
 /*
@@ -668,7 +661,7 @@ main {
     }
 
     .presbob{
-        padding-bottom: 150px;
+        padding-bottom: 10px;
     }
 }
 
