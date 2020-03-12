@@ -366,7 +366,21 @@ ul.slides input {
     display: flex;
     justify-content: center;
 }
+.pargraphe-animals
+{
+    font-family: 'Montserrat', sans-serif;
+    size:18px;
+    text-align: justify;
+}
 
+p
+{
+    line-height: 1.8em;
+}
+.section-paragraphe
+{
+    text-align: center;
+}
 @media screen and (min-width: 1200px) {
     .last2 {
         margin-bottom: 10px;
