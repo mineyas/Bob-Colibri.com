@@ -203,12 +203,46 @@ nav {
 */
 /* Home Page */
 
+div#slider {
+    width:100%;
+    max-width:1917px;
+    overflow:hidden;
+}
+
+div#slider figure {
+    position:relative;
+    width:300%;
+    margin:0;
+    padding:0;
+    animation: 15s slidy infinite;
+}
+
+div#slider figure img {
+    width:33.33%;
+    height:auto;
+    float:left;
+}
+
+@keyframes slidy {
+    0% {left: 0%;}
+    20% {left: 0%;}
+    25% {left: -100%;}
+    45% {left: -100%;}
+    50% {left: -200%;}
+    70% {left: -200%;}
+    75% {left: -100%;}
+    95% {left: -100%;}
+    100% {left: 0%;}
+}
+
+
+
 /* .carousel {
     margin-left: 15%;
     margin-right: 15%;
 } */
 
-ul.slides {
+/* ul.slides {
     display: block;
     position: relative;
     height: 600px;
@@ -333,7 +367,7 @@ ul.slides input {
 
 .input-1:checked + .slide-container .nav label { 
     display: block; 
-}
+} */
 
 .blocLast {
     display: flex;
@@ -345,13 +379,13 @@ ul.slides input {
     width: 100%;
     box-shadow: 5px 2px 5px grey;
 }
-.carousel {
+/* .carousel {
     display:none;
 }
 
 .mobile {
     width:100%;
-}
+} */
 
 .nxtGal {
     margin: 5px;
@@ -369,12 +403,12 @@ ul.slides input {
     .last2 {
         margin-bottom: 10px;
     }
-    .carousel {
+    /* .carousel {
         display:block;
     }
     .mobile {
         display:none;
-    }
+    } */
 
     .nxtGal {
         flex-direction: row;
