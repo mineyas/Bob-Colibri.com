@@ -32,7 +32,8 @@ h1 {
     font-family: 'Playlist Script';
     font-size:50px;
     font-weight: 900;
-    margin-top : 50px;
+    margin-top : 0px;
+    padding: 18px;
     margin-bottom : 50px;
 }
 
@@ -270,7 +271,21 @@ div#slider figure img {
     display: flex;
     justify-content: center;
 }
+.pargraphe-animals
+{
+    font-family: 'Montserrat', sans-serif;
+    size:18px;
+    text-align: justify;
+}
 
+p
+{
+    line-height: 1.8em;
+}
+.section-paragraphe
+{
+    text-align: center;
+}
 @media screen and (min-width: 1200px) {
     .last2 {
         margin-bottom: 10px;
@@ -324,10 +339,10 @@ div#slider figure img {
       margin-bottom: 100px;
 }
 
-.galleryback {
+
+main {
     margin: 0% 0%;
-    background: rgba(169, 223, 191, 0.2);
-   
+    background: rgba(206, 218, 130, 0.1);
 }
   
 
@@ -341,7 +356,7 @@ div#slider figure img {
     opacity: 0.6;
     text-align: center;
     border: 1px solid white;
-    width: 157px;
+    width: 180px;
   }
   div .namesan:hover {
     background-color: whitesmoke;
@@ -359,32 +374,37 @@ div#slider figure img {
     .galtit {
         margin-top: 0px;
     }
+    
+    main {
+       background: rgba(206, 218, 130, 0.1);
+}
 
+    /*
     .galleryback {
-        margin: 0% 10%;
-        background: rgba(169, 223, 191, 0.2);
+        
+        background: rgba(206, 218, 130, 0.1);
        
-   }
+   }*/
    
    div .namesan {
     position: relative;
-    bottom: -208px;
-    right: -102px;
+    bottom: -287px;
+    right: -86px;
     font-size: 30px;
     color: cadetblue;
     background-color: whitesmoke;
     opacity: 0.4;
     text-align: center;
     border: 1px solid white;
-    width: 157px;
+    width: 180px;
 }
 
    div .namesan:hover {
     background-color: whitesmoke;
     border: 3px solid white;
-    width: 180px;
-    right: -94px;
-    bottom: -221px;
+    width: 190px;
+    right: -82px;
+    bottom: -276px;
     opacity: 0.9;
     color: cadetblue;
    }
@@ -451,7 +471,7 @@ div#slider figure img {
 .textimg{
     opacity: 1;
     background-color: rgba(114,217,228,0.9);
-    color:white;
+    color: black;
     font-size: 16px;
     padding: 16px 32px;
 }
@@ -530,9 +550,6 @@ div#slider figure img {
     text-align: center;
 }
 
-.textimg{
-    font-size: 10px;
-}
 }
   
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
