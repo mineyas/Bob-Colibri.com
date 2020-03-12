@@ -181,14 +181,20 @@ nav {
 /* Home Page */
 
 .carousel {
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 0px;
+    margin-right: 0px;
+   
+}
+
+.coVer
+{
+    object-fit: cover; 
 }
 
 ul.slides {
     display: block;
     position: relative;
-    height: 600px;
+    height: 500px;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -211,6 +217,7 @@ ul.slides input {
 
 .slide-container { 
     display: block; 
+    
 }
 
 .slide-image {
@@ -221,6 +228,7 @@ ul.slides input {
     top: 0;
     opacity: 0;
     transition: all .7s ease-in-out;
+    
 }   
 
 .slide-image img {
@@ -298,12 +306,12 @@ ul.slides input {
      display: block; 
 }
 
-.input-1#img-1:checked ~ .carousel-dots label#img-dot-1,
-.input-1#img-2:checked ~ .carousel-dots label#img-dot-2,
-.input-1#img-3:checked ~ .carousel-dots label#img-dot-3,
-.input-1#img-4:checked ~ .carousel-dots label#img-dot-4,
-.input-1#img-5:checked ~ .carousel-dots label#img-dot-5,
-.input-1#img-6:checked ~ .carousel-dots label#img-dot-6 {
+.input-1 #img-1:checked ~ .carousel-dots label#img-dot-1,
+.input-1 #img-2:checked ~ .carousel-dots label#img-dot-2,
+.input-1 #img-3:checked ~ .carousel-dots label#img-dot-3,
+.input-1 #img-4:checked ~ .carousel-dots label#img-dot-4,
+.input-1 #img-5:checked ~ .carousel-dots label#img-dot-5,
+.input-1 #img-6:checked ~ .carousel-dots label#img-dot-6 {
 	opacity: 1;
 }
 
