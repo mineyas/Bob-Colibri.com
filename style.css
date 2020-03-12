@@ -48,9 +48,10 @@ p {
     font-family: 'Montserrat', sans-serif;
     font-size:20px;
     text-align:justify;
+    hyphens:auto;
 }
 
-button {
+button, .homeButton {
     margin-top: .25 rem;
     margin-bottom: .25 rem;
     color:#fff;
@@ -202,10 +203,10 @@ nav {
 */
 /* Home Page */
 
-.carousel {
+/* .carousel {
     margin-left: 15%;
     margin-right: 15%;
-}
+} */
 
 ul.slides {
     display: block;
@@ -344,10 +345,37 @@ ul.slides input {
     width: 100%;
     box-shadow: 5px 2px 5px grey;
 }
+.carousel {
+    display:none;
+}
+
+.mobile {
+    width:100%;
+}
+
+
+
+.nxtGal {
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.txtUndr {
+    display: flex;
+    justify-content: center;
+}
 
 @media screen and (min-width: 1200px) {
     .last2 {
         margin-bottom: 10px;
+    }
+    .carousel {
+        display:block;
+    }
+    .mobile {
+        display:none;
     }
 }
 
@@ -603,23 +631,32 @@ ul.slides input {
 
 /* CSS formular and map of Profile's page */
 
+form {
+    display: flex;
+    flex-direction: column;
+}
+
 .myInfos {
     text-decoration: underline;
 }
 
- label {
-    display : flex;
-    flex-direction: column;
-    align-items: flex-start;
-} 
-
-form {
-    display: flex; 
-    flex-direction: column;
-    align-items: center;
+.formular {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.formular {
+.area {
+    display: flex;
+    justify-content: space-between;
+}
+
+.marge {
+    margin-top : 12px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.borderText {
     margin-top: 10px;
     width: 80%;
     height: 30px;
@@ -665,12 +702,9 @@ iframe {
     margin-top: 10px;
 }
 
-.button {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.maSection {
+.blocButton {
+    display: flex;
+    justify-content: flex-end;
     margin-top: 10px;
 }
 
@@ -691,7 +725,7 @@ iframe {
         height: 450px;
     }
 
-    textarea {
+    .txtArea {
         height: 100px;
     }
 
@@ -699,12 +733,15 @@ iframe {
         height: 45px;
     }
 
-    input, textarea {
+    textarea {
         padding: 10px;
         font-size: x-large;
     }
 
-    
+    .button {
+        display: flex;
+        text-align: right;
+    }
 }
 
 /*
