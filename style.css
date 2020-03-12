@@ -353,12 +353,10 @@ ul.slides input {
     width:100%;
 }
 
-
-
 .nxtGal {
     margin: 5px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -376,6 +374,10 @@ ul.slides input {
     }
     .mobile {
         display:none;
+    }
+
+    .nxtGal {
+        flex-direction: row;
     }
 }
 
