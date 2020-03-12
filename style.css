@@ -122,7 +122,7 @@ nav {
     height: 60px;  
  }
 
- nav a {
+ nav a, nav a:hover {
     text-decoration: none;
     color: black;
     white-space: nowrap;
@@ -136,9 +136,7 @@ nav {
      height: 30px;
  }
  
- nav a:hover {
-     color:white;
- }
+
 
  @media only screen and (min-width:800px) {
     
@@ -170,6 +168,11 @@ nav {
 
     nav a {
         font-size: 20px;
+    }
+    
+    nav a:hover {
+        color:white;
+        font-size: 24px;
     }
     
     .toTheTop {
