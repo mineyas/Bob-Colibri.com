@@ -604,6 +604,7 @@ textarea {
     border-top : 2px solid rgb(201,225,101);
     border-right: 2px solid rgb(201,225,101);
     box-shadow: 2px 2px 1px grey;
+    resize: vertical;
 }
 
 iframe {
