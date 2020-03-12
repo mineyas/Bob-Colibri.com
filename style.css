@@ -569,21 +569,32 @@ div .namesan {
 
 /* CSS formular and map of Profile's page */
 
+form {
+    display: flex;
+    flex-direction: column;
+}
+
 .myInfos {
     text-decoration: underline;
 }
 
-label {
-    display : none;
-}
-
-form {
-    display: flex; 
-    flex-direction: column;
-    align-items: center;
-}
-
 .formular {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.area {
+    display: flex;
+    justify-content: space-between;
+}
+
+.marge {
+    margin-top : 12px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.borderText {
     margin-top: 10px;
     width: 80%;
     height: 30px;
@@ -629,12 +640,9 @@ iframe {
     margin-top: 10px;
 }
 
-.button {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.maSection {
+.blocButton {
+    display: flex;
+    justify-content: flex-end;
     margin-top: 10px;
 }
 
@@ -655,7 +663,7 @@ iframe {
         height: 450px;
     }
 
-    textarea {
+    .txtArea {
         height: 100px;
     }
 
@@ -663,12 +671,15 @@ iframe {
         height: 45px;
     }
 
-    input, textarea {
+    textarea {
         padding: 10px;
         font-size: x-large;
     }
 
-    
+    .button {
+        display: flex;
+        text-align: right;
+    }
 }
 
 /*
