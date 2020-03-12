@@ -32,7 +32,7 @@ h1 {
     font-family: 'Playlist Script';
     font-size:50px;
     font-weight: 900;
-    margin-top : 50px;
+    margin-top : 0px;
     margin-bottom : 50px;
 }
 
@@ -416,7 +416,8 @@ ul.slides input {
       margin-bottom: 100px;
 }
 
-.galleryback {
+
+main {
     margin: 0% 0%;
     background: rgba(206, 218, 130, 0.1);
 }
@@ -450,12 +451,17 @@ ul.slides input {
     .galtit {
         margin-top: 0px;
     }
+    
+    main {
+       background: rgba(206, 218, 130, 0.1);
+}
 
+    /*
     .galleryback {
         
         background: rgba(206, 218, 130, 0.1);
        
-   }
+   }*/
    
    div .namesan {
     position: relative;
