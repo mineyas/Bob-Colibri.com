@@ -390,8 +390,7 @@ ul.slides input {
 
 .galleryback {
     margin: 0% 0%;
-    background: rgba(169, 223, 191, 0.2);
-   
+    background: rgba(206, 218, 130, 0.1);
 }
   
 
@@ -425,8 +424,8 @@ ul.slides input {
     }
 
     .galleryback {
-        margin: 0% 10%;
-        background: rgba(169, 223, 191, 0.2);
+        
+        background: rgba(206, 218, 130, 0.1);
        
    }
    
