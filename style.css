@@ -478,6 +478,51 @@ div .namesan:hover {
     background-color: black;
 }*/
 
+/* Hover description for desktop versions */
+.container {
+    position: relative;
+  }
+.container:hover .image {
+    opacity: 0.3;
+  }
+  
+.container:hover .middle {
+    opacity: 1;
+  }
+
+  .image  {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+
+ .middle {
+        padding-right: 10px; 
+        padding-left: 10px;    
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        width: fit-content;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+.textimg{
+    opacity: 1;
+    background-color: rgba(114,217,228,0.9);
+    color:white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+/* Images for desktop versions */
+
 .detailed img {width:100%}
 
 .detailedRow {
@@ -495,14 +540,14 @@ div .namesan:hover {
     max-width: 25%;
     padding: 0 4px;
   }
-  
+
   .detailedColumn img {
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
     /*filter: grayscale(0.4);*/
   }
-  
+
   /* Responsive layout - makes a two column-layout instead of four columns */
   @media screen and (max-width: 800px) {
     .detailedColumn {
@@ -510,7 +555,41 @@ div .namesan:hover {
       flex: 50%;
       max-width: 50%;
     }
+
+ /* Images descriptions    */
+
+ .container {
+    position: relative;
+    pointer-events: none;
   }
+
+.container:hover .image {
+    opacity: 0.3;
+    pointer-events: none;
+    }
+  
+.container:hover .middle {
+    opacity: 1;
+    pointer-events: none;
+}
+
+.middle{
+    display: contents;
+    opacity: 1;
+    padding-right: 0px;
+    padding-left: 0px;
+    position: absolute;
+    width: 100%;
+    top: 92%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.textimg{
+    font-size: 10px;
+}
+}
   
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
@@ -518,7 +597,44 @@ div .namesan:hover {
       -ms-flex: 100%;
       flex: 100%;
       max-width: 100%;
-    }
+    } 
+
+ /* Images descriptions    */
+
+ .container {
+    position: relative;
+    pointer-events: none;
+  }
+
+.container:hover .image {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+  
+.container:hover .middle {
+    opacity: 1;
+    pointer-events: none;
+}
+
+.middle{
+    display: contents;
+    opacity: 1;
+    padding-right: 0px;
+    padding-left: 0px;
+    position: absolute;
+    width: 100%;
+    top: 92%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+
+  
+
+
+
 }
 
 /*
