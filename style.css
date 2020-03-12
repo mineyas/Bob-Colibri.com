@@ -502,6 +502,15 @@ div .namesan:hover {
     width: 100%;
     /*filter: grayscale(0.4);*/
   }
+
+  a.detailed {
+      color:white;
+  }
+
+  button.detailed {
+      display:block;
+        margin: 50px auto 50px auto;
+  }
   
   /* Responsive layout - makes a two column-layout instead of four columns */
   @media screen and (max-width: 800px) {
