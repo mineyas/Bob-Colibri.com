@@ -54,8 +54,8 @@ p {
 
 
 .homeButton {
-    margin-top: .25 rem;
-    margin-bottom: .25 rem;
+    margin-top: .25rem;
+    margin-bottom: .25rem;
     color:#000;
     background-color:rgb(114,217,228);
     border-color:rgb(114,217,228);
@@ -175,7 +175,7 @@ nav {
     }
 
     nav li {
-        padding: 15px, 20px;
+        padding: 15px 20px;
         margin-right: 70px; 
     }
 
@@ -271,7 +271,6 @@ div#slider figure img {
 .pargraphe-animals
 {
     font-family: 'Montserrat', sans-serif;
-    size:18px;
     text-align: justify;
 }
 
@@ -613,8 +612,7 @@ div.namesan {
 }
 
 .presentation{
-    font-family: 'Montserrat', sans-serif;;
-    size:18;
+    font-family: 'Montserrat', sans-serif;
     text-align: justify;  
 }
 
