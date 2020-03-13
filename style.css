@@ -642,7 +642,7 @@ div.namesan {
         display: block;
     }
   
-   
+
 
     .about img, .experience img, .tools img { 
         width: 300px;
@@ -699,10 +699,18 @@ form {
     justify-content: space-between;
 }
 
+input::placeholder, textarea::placeholder{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+
 .marge {
     margin-top : 12px;
     font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
 } 
+
+
 
 .email:required{
     border-left-color: palegreen;
@@ -724,6 +732,7 @@ textarea {
     border: 2px solid rgb(0,192,226);
     border-radius: 5px;
     font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
     border-top : 2px solid rgb(201,225,101);
     border-right: 2px solid rgb(201,225,101);
     box-shadow: 2px 2px 1px grey;
@@ -747,16 +756,22 @@ iframe {
     justify-content: center;
 }
 
-p, .informations {
+.informations p {
     font-family: 'Montserrat', sans-serif;
     margin-top: 25px;
-    text-align: center;
+    text-align: justify;
+    hyphens: auto;
 }
 
 .blocButton {
     display: flex;
     justify-content: center;
     padding: 20px;
+}
+
+
+.button:hover {
+    color:#C9E165;
 }
 
 @media screen and (min-width: 1200px) {
@@ -796,6 +811,7 @@ form {
 .marge {
     margin-top : 12px;
     font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
 } 
 
 .email:required{
@@ -812,7 +828,7 @@ form {
     box-shadow: 2px 2px 1px grey;
 }
 
-textarea {
+.txtarea {
     margin-top: 10px;
     height: 60px;
     border: 2px solid rgb(0,192,226);
@@ -823,6 +839,10 @@ textarea {
     box-shadow: 2px 2px 1px grey;
     resize: vertical;
 } 
+input::placeholder, textarea::placeholder{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
 
 iframe {
     display: flex;
@@ -841,10 +861,9 @@ iframe {
     justify-content: center;
 }
 
-p, .informations {
+.informations p {
     font-family: 'Montserrat', sans-serif;
     margin-top: 25px;
-    text-align: center;
 }
 
 .blocButton {
@@ -859,9 +878,9 @@ p, .informations {
     }
 
     .informations {
-        padding: 5px;
+        padding: 100px;
         display: flex;
-        align-items: flex-start;
+        align-items: center;
     }
     
     iframe {
