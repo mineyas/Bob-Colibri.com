@@ -52,10 +52,6 @@ p {
     hyphens:auto;
 }
 
-.homeButton {
-    margin: auto;
-    text-align: center;
-}
 
 .homeButton {
     margin-top: .25 rem;
@@ -69,16 +65,18 @@ p {
     cursor: pointer;
     padding:10px;
     font-family: 'Montserrat', sans-serif;
+    margin: auto;
+    text-align: center;
 }
 
-a {
-    color: #00C0E2;
+a, .homeButton {
+    color: black;
     text-decoration:none;
     font-size:20px;
     font-family: 'Montserrat', sans-serif;
 }
 
-a:hover {
+a:hover, .homeButton:hover {
     color:#C9E165;
 }
 
@@ -866,12 +864,6 @@ iframe {
     margin-top: 25px;
 }
 
-.blocButton {
-    display: flex;
-    justify-content: flex-end;
-    padding: 20px;
-}
-
     .infosMedia {
         display: flex;
         flex-direction: row;
@@ -901,9 +893,9 @@ iframe {
         font-size: x-large;
     }
 
-    .button {
+    .blocButton {
         display: flex;
-        text-align: right;
+        align-self: flex-end;
     }
 }
 
