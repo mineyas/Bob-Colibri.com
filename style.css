@@ -57,7 +57,7 @@ p {
     text-align: center;
 }
 
-button, .homeButton {
+.homeButton {
     margin-top: .25 rem;
     margin-bottom: .25 rem;
     color:#000;
@@ -281,10 +281,13 @@ p
 {
     line-height: 1.8em;
 }
-.section-paragraphe
+.centerSec
 {
     text-align: center;
+    padding: 10px;
+    margin: 20px 0px;
 }
+
 @media screen and (min-width: 1200px) {
     .last2 {
         margin-bottom: 10px;
@@ -345,7 +348,7 @@ main {
 }
   
 
-  div .namesan {
+div.namesan {
     position: relative;
     bottom: -350px;
     right: -90px;
@@ -357,7 +360,7 @@ main {
     border: 1px solid white;
     width: 180px;
   }
-  div .namesan:hover {
+  .namesan:hover {
     background-color: whitesmoke;
     border: 3px solid white;
     width: 180px;
@@ -508,10 +511,6 @@ main {
       color:white;
   }
 
-  button.detailed {
-      display:block;
-        margin: 50px auto 50px auto;
-  }
   
   /* Responsive layout - makes a two column-layout instead of four columns */
   @media screen and (max-width: 800px) {
@@ -590,6 +589,11 @@ main {
     transform: translate(-50%, -50%);
     text-align: center;
     }
+}
+
+.dangeButton {
+    display: flex;
+    align-self: center;
 }
 
 /*
