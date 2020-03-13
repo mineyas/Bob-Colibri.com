@@ -720,6 +720,8 @@ input::placeholder, textarea::placeholder{
     border-top : 2px solid rgb(201,225,101);
     border-right: 2px solid rgb(201,225,101);
     box-shadow: 2px 2px 1px grey;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
 }
 
 textarea {
@@ -745,6 +747,8 @@ iframe {
     border-top : 2px solid rgb(201,225,101);
     border-right: 2px solid rgb(201,225,101);
     box-shadow: 2px 2px 1px grey;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
 }
 
 #map {
@@ -822,6 +826,8 @@ form {
     border-top : 2px solid rgb(201,225,101);
     border-right: 2px solid rgb(201,225,101);
     box-shadow: 2px 2px 1px grey;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
 }
 
 .txtarea {
@@ -830,10 +836,12 @@ form {
     border: 2px solid rgb(0,192,226);
     border-radius: 5px;
     font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
     border-top : 2px solid rgb(201,225,101);
     border-right: 2px solid rgb(201,225,101);
     box-shadow: 2px 2px 1px grey;
     resize: vertical;
+    
 } 
 input::placeholder, textarea::placeholder{
     font-family: 'Montserrat', sans-serif;
@@ -894,7 +902,6 @@ iframe {
 
     textarea {
         padding: 10px;
-        font-size: x-large;
     }
 
     .button {
