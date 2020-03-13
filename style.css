@@ -52,14 +52,10 @@ p {
     hyphens:auto;
 }
 
-.homeButton {
-    margin: auto;
-    text-align: center;
-}
 
-button, .homeButton {
-    margin-top: .25 rem;
-    margin-bottom: .25 rem;
+.homeButton {
+    margin-top: .25rem;
+    margin-bottom: .25rem;
     color:#000;
     background-color:rgb(114,217,228);
     border-color:rgb(114,217,228);
@@ -69,16 +65,18 @@ button, .homeButton {
     cursor: pointer;
     padding:10px;
     font-family: 'Montserrat', sans-serif;
+    margin: auto;
+    text-align: center;
 }
 
-a {
-    color: #00C0E2;
+a, .homeButton {
+    color: black;
     text-decoration:none;
     font-size:20px;
     font-family: 'Montserrat', sans-serif;
 }
 
-a:hover {
+a:hover, .homeButton:hover {
     color:#C9E165;
 }
 
@@ -177,7 +175,7 @@ nav {
     }
 
     nav li {
-        padding: 15px, 20px;
+        padding: 15px 20px;
         margin-right: 70px; 
     }
 
@@ -273,7 +271,6 @@ div#slider figure img {
 .pargraphe-animals
 {
     font-family: 'Montserrat', sans-serif;
-    size:18px;
     text-align: justify;
 }
 
@@ -281,10 +278,13 @@ p
 {
     line-height: 1.8em;
 }
-.section-paragraphe
+.centerSec
 {
     text-align: center;
+    padding: 10px;
+    margin: 20px 0px;
 }
+
 @media screen and (min-width: 1200px) {
     .last2 {
         margin-bottom: 10px;
@@ -345,7 +345,7 @@ main {
 }
   
 
-  div .namesan {
+div.namesan {
     position: relative;
     bottom: -350px;
     right: -90px;
@@ -357,7 +357,7 @@ main {
     border: 1px solid white;
     width: 180px;
   }
-  div .namesan:hover {
+  .namesan:hover {
     background-color: whitesmoke;
     border: 3px solid white;
     width: 180px;
@@ -508,10 +508,6 @@ main {
       color:white;
   }
 
-  button.detailed {
-      display:block;
-        margin: 50px auto 50px auto;
-  }
   
   /* Responsive layout - makes a two column-layout instead of four columns */
   @media screen and (max-width: 800px) {
@@ -592,6 +588,11 @@ main {
     }
 }
 
+.dangeButton {
+    display: flex;
+    align-self: center;
+}
+
 /*
 .########..########...#######..########.####.##.......########
 .##.....##.##.....##.##.....##.##........##..##.......##......
@@ -611,8 +612,7 @@ main {
 }
 
 .presentation{
-    font-family: 'Montserrat', sans-serif;;
-    size:18;
+    font-family: 'Montserrat', sans-serif;
     text-align: justify;  
 }
 
@@ -870,12 +870,6 @@ iframe {
     margin-top: 25px;
 }
 
-.blocButton {
-    display: flex;
-    justify-content: flex-end;
-    padding: 20px;
-}
-
     .infosMedia {
         display: flex;
         flex-direction: row;
@@ -904,9 +898,9 @@ iframe {
         padding: 10px;
     }
 
-    .button {
+    .blocButton {
         display: flex;
-        text-align: right;
+        align-self: flex-end;
     }
 }
 
