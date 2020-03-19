@@ -944,68 +944,27 @@ footer img {
 }
 
 
+/*  Javascript */
 
-
-/*footer {
-    display: flex;
-    background-color: #303030;
-    width: 100%;
-    height: 100px;
-    align-items: center;
-    margin-top: auto;
+.chkbox {
+    display: none;
 }
 
-footer a {
-  color : #cfcfcf;
-  font-weight: bold;
-  text-decoration: none;
-  padding-top: 10px;
-}
-
-
-
-.externalLinks {
-    margin-left: auto;
-}
-*/
-/* footer
-    
-{
-    background-color: rgb(168, 156, 156);
-     color: white;
-     font-family: "Montserrat", "Open Sans" 
-
-    
-}
-
-.main-footer
-
-{
-    display: flex;
-    justify-content: space-around;
-    
-    
-}
-
-footer li 
-{
-    list-style: none;
-   
-
-}
-
-.icons
-{
-    display:flex;
-    flex-flow: column wrap;
-    align-items: flex-start;
-    
-}
-
-.bottom-footer
-{
-display: flex;
-align-items: center;
-justify-content: space-around;
-padding-bottom: 10px;
-} */
+:root {
+    --background-color: white;
+    --text-color: black;
+    /* to read: https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */
+  }
+  
+  [data-theme="dark"] {
+    /* to read: https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-* */
+    /* and https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors */
+    --background-color: black;
+    --text-color: white;
+  }
+  
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
