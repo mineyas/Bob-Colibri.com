@@ -14,6 +14,32 @@ html {
     
 } 
 
+
+
+/* dark mode */
+:root {
+    --background-color: white;
+    --text-color: black;
+    /* to read: https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */
+  }
+  
+
+[data-theme="dark"] {
+    /* to read: https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-* */
+    /* and https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors */
+    --background-color: black;
+    --text-color: white;
+  }
+
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+/* dark mode */ 
+
+
+
+
 @font-face {
 	font-family: "Playlist Script";
 	src: url('Playlist Script.otf');
@@ -79,6 +105,36 @@ a, .homeButton {
 a:hover, .homeButton:hover {
     color: white;
 }
+
+/* modul js*/
+.conBut {
+    margin-top: .25rem;
+    margin-bottom: .25rem;
+    color:#000;
+    background-color:rgb(234, 182, 218) ;
+    border-color:rgb(250, 92, 202);
+    font-weight: 300;
+    font-size: 1.5rem;
+    border-radius: .25rem;
+    cursor: pointer;
+    padding:10px;
+    font-family: 'Montserrat', sans-serif;
+    margin: auto;
+    text-align: center;
+}
+
+a, .conBut {
+    color: black;
+    text-decoration:none;
+    font-size:20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a:hover, .conBut:hover {
+    color: white;
+}
+
+/* modul js*/
 
 @media only screen and (min-width:1200px) {
    
@@ -284,6 +340,76 @@ p
     padding: 10px;
     margin: 20px 0px;
 }
+
+
+
+/* modal js*/
+.modal-bg {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+}
+.bg-active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal{
+    position: relative;
+    background-color: white;
+    width: 30%;
+    height: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+   
+}
+
+
+.modal h2 {
+    margin-top: 5%;
+    margin-bottom: 0;
+}
+
+.modal textarea {
+
+    margin-top: 10px;
+    height: 60px;
+    border: 2px solid rgb(0,192,226);
+    border-radius: 5px;
+    
+    font-size: 20px;
+   
+    box-shadow: 2px 2px 1px grey;
+    resize: vertical;
+
+} 
+.modal button{
+    padding: 10px 30px;
+    background-color:rgb(234, 182, 218);
+    border-color:rgb(250, 92, 202);
+    color:#000;
+    cursor: pointer;
+    
+}
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* modal js*/
 
 @media screen and (min-width: 1200px) {
     .last2 {

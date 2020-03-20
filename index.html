@@ -11,6 +11,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 	<link rel="icon" href="favicon2.ico" />
+	<script src="script.js"></script>
+	
 </head>
 
 <body>
@@ -39,6 +41,10 @@
 			</div>
 
 			<section class="centerSec">
+            <!--dark mode button-->
+				<label for="toggler">Click to see magic</label>
+				<input id="toggler" type="checkbox">
+				
 				<p class="pargraphe-animals">
 					Animals...so beautiful and strange and fluffy, but also scary, ugly and dangerous. In my blog you
 					will find the most interesting animals’ photos. And of course, you will discover how nature is
@@ -82,6 +88,22 @@
 			<!-- Button -->
 			<div class="nxtGal">
 				<a href="galleryTheme.html" class="homeButton">See the gallery</a>
+				<button class="conBut">Send us an email</button>
+			</div>
+
+			<div class="modal-bg">
+				<div class="modal">
+					<h2>Ask me anything</h2>
+					<label for="name">Name:</label>
+					<input type="text" name="name">
+					<label for="email">Email:</label>
+					<input type="email" name="email">
+					<label for="text">Your Message</label>
+					<textarea class="txtCon" id="message" placeholder="Your message" name="yourMessage" required></textarea>
+					<button>Send</button>
+					<span class="modal-close">x</span>
+				</div>
+
 			</div>
 
 
@@ -157,6 +179,12 @@
 			</footer>
 		</main>
 	</div>
+
+	<script type="text/javascript" src="/Users/yas/Bob-Colibri.com/script.js "></script>
+
+
+	<script src="script.js"></script>
+	
 </body>
 
 </html>
