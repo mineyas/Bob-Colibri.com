@@ -367,7 +367,7 @@ p
     position: relative;
     background-color: white;
     width: 30%;
-    height: 30%;
+    height: 40%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -396,6 +396,8 @@ p
 } 
 .modal button{
     padding: 10px 30px;
+    margin-bottom: 5%;
+    margin-top: 5%;
     background-color:rgb(234, 182, 218);
     border-color:rgb(250, 92, 202);
     color:#000;
